@@ -1,5 +1,5 @@
 import React from 'react'
-import './LandingPage.css'
+import './LandingPage.scss'
 import ProjectCard from './ProjectCard'
 import { SiLinkedin, SiTwitter, SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
 
