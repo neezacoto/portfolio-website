@@ -2,7 +2,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    
+    background: rgb(227,227,227);
+    background: linear-gradient(0deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 95%, rgba(221,221,221,1) 100%);
+
 }
 
 /*navigation bar*/
@@ -121,6 +123,7 @@ ul {
 
 #personal-section {
     padding: 4em 6em;
+    margin-bottom: 12em;
 }
 #personal-section .title h1, #personal-section .title h2{
     display: flex;
@@ -199,5 +202,47 @@ but for the scope of this project it really doesn't matter */
     transform: scale(1.1);
 }
 
+/* contact section */
 
+#contact-section {
+    padding: 4em 6em;
+}
+
+.social-container {
+    display: flex;
+}
+
+.social {
+    padding: 0 2em 0 1em;
+    
+}
+
+.social:first-child {
+    border-right: 3px solid #D8D8D8;
+    padding-right: 5em;
+    margin-right: 5em;
+}
+
+.social p {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.social p:first-child{
+    color:#7D7D7D;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: black;
+    font-size: 3em;
+}
+
+.social-links a {
+    padding: 0;
+    color: inherit;
+}
 
