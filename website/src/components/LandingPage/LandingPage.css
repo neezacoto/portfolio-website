@@ -38,7 +38,7 @@ ul {
         
     }
     ul {
-        border-top: 1px solid #7D7D7D ;
+        border-top: 1px solid #e4e4e4 ;
         background-color: rgb(252, 252, 252, 0.99);
 
         width: 100%;
@@ -174,7 +174,7 @@ ul {
     }
     
     .intro-text p{
-        font-size: 1.6rem;
+        font-size: 1.9em;
     }
     
 }
@@ -203,7 +203,44 @@ ul {
 .cards {
     display: grid;
     grid-template-columns: repeat(5, auto);
+    gap: 5em;
     
+}
+
+@media (max-width: 1120px) and (min-width: 981px ) {
+
+    .cards {
+        grid-template-columns: repeat(2, auto);
+        gap: 0;
+        
+    }
+    
+}
+
+@media (max-width: 980px) {
+    .title h1 {
+        line-height: .9em;
+        font-size: 4em;
+    }
+
+    .title h2 {
+        font-size: 1.4em;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+
+    .cards {
+        margin-top: -4em;
+        position: relative;
+        grid-template-columns: repeat(1,auto);
+        width: 100%;
+        justify-content: flex-start;
+        grid-row-gap: 0;
+    }
+
+    #project-section {
+        padding: 4em 2em;
+    }
 }
 
 /* personal background */

@@ -29,6 +29,9 @@
     max-height: 579px;
     overflow: hidden;
     border-radius: 25px;
+
+    box-shadow: 10px 10px 13px -12px black;
+    transition: transform 500ms;
 }
 
 .project-container {
@@ -42,3 +45,18 @@
 
 }
 
+@media (max-width: 1120px) and (min-width: 981px ) {
+
+    .card-container {
+        transform: scale(.8);
+    }
+    
+}
+
+@media (max-width: 980px) {
+    .card-container {
+        transform: scale(.7,.7);
+        margin-left: -4em;
+        margin-bottom: -7em;
+    }
+}
