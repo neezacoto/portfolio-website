@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 /*navigation bar*/
@@ -8,6 +10,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 }
 ul {
     display: flex;
@@ -19,6 +22,7 @@ ul {
     
     font-size: 1.5rem;
 }
+/* Intro Section */
 #intro-section {
     
     padding: 1em;
@@ -35,19 +39,23 @@ ul {
     border-radius: 30%;
     width: 345px;
     height: 345px;
+    min-width: 345px;
+    min-height: 345px;
 
     overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow: 10px 10px 13px -12px black;
 }
 
 .face-card img {
     
     object-fit: cover;
     width: 100%;
-    
+    min-width: 100%;
 
 }
 
@@ -58,22 +66,49 @@ ul {
 }
 
 .intro-text h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-weight: 400;
 }
 
 .intro-text p {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.1rem;
     color: #626262;
-    margin-top: -1rem;
+    margin-top: -2rem;
     padding-left: .5rem;
 }
 
 #intro-section button {
     border: none;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 2.1rem;
+    font-weight: 400;
+
     padding-left: .5rem;
     margin-top: 1rem;
+}
+
+/* Project section */
+
+#project-section {
+    padding: 10em 6em;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 1.7em;
+    color: #7D7D7D;
+}
+
+.title h1 {
+    font-weight: 500;
+    font-size: 5em;
+    
+    margin-bottom: .5em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
 }

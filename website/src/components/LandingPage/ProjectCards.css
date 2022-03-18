@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+}
+
+.project-title h2 {
+    color: #A7A7A7;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: -.9em;
+}
+
+
+.project-title h1 {
+    
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.card-container {
+    background-color: black;
+    width: 445px;
+    height: 579px;
+    max-width: 445px;
+    max-height: 579px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.project-container {
+    overflow: hidden;
+}
+
+.project-container img {
+    object-fit: contain;
+    width: 100%;
+    
+
+}
+

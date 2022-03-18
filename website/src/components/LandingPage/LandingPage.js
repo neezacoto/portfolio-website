@@ -1,5 +1,6 @@
 import React from 'react'
 import './LandingPage.css'
+import ProjectCard from './ProjectCard'
 
 function LandingPage() {
   return (
@@ -46,6 +47,15 @@ function LandingPage() {
 
         </section>
         <section id="project-section">
+            <div className='title'>
+                <h2>-Web Development</h2>
+                <h1>Personal Projects</h1>
+            </div>
+            <div className='cards'>
+                <ProjectCard start={'2020'} end={'2020'} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
+                <ProjectCard start={'2020'} end={'2020'} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
+            </div>
+            
 
         </section>
         <section id="personal-section">
