@@ -249,6 +249,11 @@ li:hover {
   padding: 10em 6em;
 }
 
+.title h1, .title h2 {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
 .title h2 {
   font-weight: 500;
   font-size: 1.7em;
