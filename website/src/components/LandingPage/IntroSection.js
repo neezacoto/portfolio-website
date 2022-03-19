@@ -26,12 +26,12 @@ function IntroSection(props) {
                         target='_blank'
                         className='link-learn'
                     >
-                    <button className='learn-more'>
+                    
                         
-                        Learn more about me <BiChevronRight className='arrow'/>
+                        <span>Learn more about me</span><BiChevronRight className='arrow'/>
                         
                         
-                    </button>
+                    
                 </a>
             </div>
 

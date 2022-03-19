@@ -157,35 +157,25 @@ li:hover {
 
 .link-learn {
   text-decoration: none;
-}
-
-#intro-section button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  font-size: 2.1rem;
-  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  color: inherit;
+  font-size: 2.1em;
   padding-left: .5rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  gap: 0;
-  -webkit-transition: gap 300ms, color 200ms !important;
-  transition: gap 300ms, color 200ms !important;
+  -webkit-transition: color 100ms !important;
+  transition: color 100ms !important;
 }
 
-#intro-section button:hover {
-  font-weight: 500;
-  gap: .5em;
+.link-learn:hover {
   color: cornflowerblue;
+}
+
+.link-learn:hover span {
+  margin-right: .5rem;
 }
 
 .arrow {
@@ -227,8 +217,9 @@ li:hover {
             align-items: center;
     padding-left: 0px;
     gap: 0em;
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 0em;
+    text-align: center;
   }
   .face-card {
     min-width: 215px;
@@ -240,13 +231,22 @@ li:hover {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     margin-left: 0;
+    padding: 1em 2.4em;
   }
   .intro-text h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 400;
+    line-height: 1em;
   }
   .intro-text p {
-    font-size: 1.9em;
+    padding-top: 1em;
+    font-size: 1.4em;
+  }
+  .link-learn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.4em;
   }
 }
 

@@ -5,7 +5,7 @@ import './styles/LandingPage.scss'
 function ContactSection(props) {
   return (
     <section id="contact-section"  >
-        <div id="parallax-container" style={props.parallax.contact} >
+        <div id="parallax-container"  >
             <div className='title'>
                 <h2>-Contact Info {'&'} Social Media</h2>
                 <h1>Let's Get In Touch</h1>
