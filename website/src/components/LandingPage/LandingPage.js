@@ -2,23 +2,61 @@ import React from 'react'
 import './LandingPage.scss'
 import ProjectCard from './ProjectCard'
 import { SiLinkedin, SiTwitter, SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
+import { BiChevronRight } from 'react-icons/bi'
+import {Link} from 'react-scroll'
 
 function LandingPage() {
   return (
     <div>
         <nav>
             <ul>
-                <li>
+                <li onClick={() => window.location.replace("/#intro-section")}>
+                <Link
+                    activeClass="active"
+                    to="intro-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
                     about
+                </Link>
                 </li>
                 <li>
+                <Link
+                    activeClass="active"
+                    to="project-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
                     portfolio
+                </Link>
                 </li>
                 <li>
+                <Link
+                    activeClass="active"
+                    to="personal-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
                     life
+                </Link>
                 </li>
                 <li>
+                <Link
+                    activeClass="active"
+                    to="contact-section"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
                     contact
+                </Link>
                 </li>
             </ul>
         </nav>
@@ -41,9 +79,17 @@ function LandingPage() {
                         <span role="img" aria-label="sheep">🕊️</span>
                     </p>
                 </div>
-                <button className='learn-more'>
-                    Learn more about me {'>'}
-                </button>
+                <a href='https://medium.com/hack-diversity-movement/cohort-stories-meet-christian-1c385ebde885'
+                        target='_blank'
+                        className='link-learn'
+                    >
+                    <button className='learn-more'>
+                        
+                        Learn more about me <BiChevronRight className='arrow'/>
+                        
+                        
+                    </button>
+                </a>
             </div>
 
         </section>
@@ -53,11 +99,10 @@ function LandingPage() {
                 <h1>Personal Projects</h1>
             </div>
             <div className='cards'>
-                <ProjectCard start={'2020'} end={'2020'} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
-                <ProjectCard start={'2020'} end={'2020'} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
+                <ProjectCard title='Loggit!'start={'2020'} end={''} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
+                <ProjectCard title='Loggit!'start={'2022'} end={''} image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} />
             </div>
             
-
         </section>
         <section id="personal-section">
             <div className='personal-content-container'>

@@ -13,23 +13,29 @@ nav {
     align-items: center;
     justify-content: flex-end;
     position: fixed;
-    right: 1rem;
-    top: 1rem;
+    right: 0rem;
+    top: 0rem;
     z-index: 9999;
 }
 ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 0;
     list-style: none;
-    padding: .5em 1em;
-    
-    font-size: 1.5rem;
+    padding: 0 1em;
+    font-size: 1.3rem;
 }
 
 li {
     cursor: pointer;
+    padding: .4em .9em;
+    box-shadow: inset 0 -3px 0 -10 black;
+    transition: box-shadow 400ms, background 300ms;
+    &:hover {
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: inset 0 -5px 0 black;    
+    }
 }
 
 @media (max-width: 980px) {
@@ -37,8 +43,6 @@ li {
         width: 100%;
         justify-content: center;
         right: 0;
-       
-        
     }
     ul {
         position: fixed;
@@ -49,6 +53,13 @@ li {
         width: 100%;
         font-size: 1.3em;
         
+    }
+
+    li {
+        padding: .4em .7em;
+        &:hover {
+            background: transparent;
+        }
     }
 
     @supports (backdrop-filter: blur(1rem)) {
@@ -117,19 +128,49 @@ li {
     padding-left: .5rem;
 }
 
+.link-learn {
+    text-decoration: none;
+}
+
+
 #intro-section button {
+    cursor: pointer;
     border: none;
     background-color: transparent;
     font-size: 2.1rem;
     font-weight: 400;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     padding-left: .5rem;
     margin-top: 1rem;
+
+    text-decoration: none;
+    gap: 0;
+    
+    transition: gap 300ms, color 200ms !important;
+    &:hover {
+        font-weight: 500;
+        gap: .5em;
+        color: cornflowerblue;
+        
+    }
+    
+    
+
+    
+}
+
+.arrow {
+    font-size: 1.3em;
+    
 }
 
 
 #intro-section *, #intro-section{
-    transition: margin 600ms, transform 500ms, width 500ms, all 1000ms;
+    transition: margin 600ms, transform 500ms, width 500ms,;
 }
 
 @media (max-width: 1120px) and (min-width: 981px ) {
@@ -542,9 +583,9 @@ but for the scope of this project it really doesn't matter */
 /* contact section */
 
 #contact-section {
-    padding: 4em 6em;
+    padding: 0em 6em;
     * {
-        transition: all 500ms;
+        transition: margin 500ms, transform 500ms;
     }
 }
 
@@ -580,11 +621,15 @@ but for the scope of this project it really doesn't matter */
     gap: 1em;
     color: black;
     font-size: 3em;
+    
 }
 
 .social-links a {
     padding: 0;
     color: inherit;
+    &:hover{
+        color: cornflowerblue;
+    }
 }
 
 

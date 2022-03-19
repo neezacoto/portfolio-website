@@ -19,8 +19,8 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: fixed;
-  right: 1rem;
-  top: 1rem;
+  right: 0rem;
+  top: 0rem;
   z-index: 9999;
 }
 
@@ -34,14 +34,27 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1em;
+  gap: 0;
   list-style: none;
-  padding: .5em 1em;
-  font-size: 1.5rem;
+  padding: 0 1em;
+  font-size: 1.3rem;
 }
 
 li {
   cursor: pointer;
+  padding: .4em .9em;
+  -webkit-box-shadow: inset 0 -3px 0 -10 black;
+          box-shadow: inset 0 -3px 0 -10 black;
+  -webkit-transition: background 300ms, -webkit-box-shadow 400ms;
+  transition: background 300ms, -webkit-box-shadow 400ms;
+  transition: box-shadow 400ms, background 300ms;
+  transition: box-shadow 400ms, background 300ms, -webkit-box-shadow 400ms;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-box-shadow: inset 0 -5px 0 black;
+          box-shadow: inset 0 -5px 0 black;
 }
 
 @media (max-width: 980px) {
@@ -59,6 +72,12 @@ li {
     background-color: rgba(252, 252, 252, 0.99);
     width: 100%;
     font-size: 1.3em;
+  }
+  li {
+    padding: .4em .7em;
+  }
+  li:hover {
+    background: transparent;
   }
   @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
     ul {
@@ -130,20 +149,48 @@ li {
   padding-left: .5rem;
 }
 
+.link-learn {
+  text-decoration: none;
+}
+
 #intro-section button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   font-size: 2.1rem;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: .5rem;
   margin-top: 1rem;
+  text-decoration: none;
+  gap: 0;
+  -webkit-transition: gap 300ms, color 200ms !important;
+  transition: gap 300ms, color 200ms !important;
+}
+
+#intro-section button:hover {
+  font-weight: 500;
+  gap: .5em;
+  color: cornflowerblue;
+}
+
+.arrow {
+  font-size: 1.3em;
 }
 
 #intro-section *, #intro-section {
-  -webkit-transition: margin 600ms, width 500ms, all 1000ms, -webkit-transform 500ms;
-  transition: margin 600ms, width 500ms, all 1000ms, -webkit-transform 500ms;
-  transition: margin 600ms, transform 500ms, width 500ms, all 1000ms;
-  transition: margin 600ms, transform 500ms, width 500ms, all 1000ms, -webkit-transform 500ms;
+  -webkit-transition: margin 600ms, width 500ms, -webkit-transform 500ms;
+  transition: margin 600ms, width 500ms, -webkit-transform 500ms;
+  transition: margin 600ms, transform 500ms, width 500ms;
+  transition: margin 600ms, transform 500ms, width 500ms, -webkit-transform 500ms;
 }
 
 @media (max-width: 1120px) and (min-width: 981px) {
@@ -514,12 +561,14 @@ but for the scope of this project it really doesn't matter */
 
 /* contact section */
 #contact-section {
-  padding: 4em 6em;
+  padding: 0em 6em;
 }
 
 #contact-section * {
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: margin 500ms, -webkit-transform 500ms;
+  transition: margin 500ms, -webkit-transform 500ms;
+  transition: margin 500ms, transform 500ms;
+  transition: margin 500ms, transform 500ms, -webkit-transform 500ms;
 }
 
 .social-container {
@@ -565,6 +614,10 @@ but for the scope of this project it really doesn't matter */
 .social-links a {
   padding: 0;
   color: inherit;
+}
+
+.social-links a:hover {
+  color: cornflowerblue;
 }
 
 @media (max-width: 1120px) and (min-width: 981px) {

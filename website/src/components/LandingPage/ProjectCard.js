@@ -6,10 +6,10 @@ function ProjectCard(props) {
     <div className='card-container'>
         <div className='project-title'>
           <h2>
-            {props.start} - {props.end}
+            {(props.end)? `${props.start} - ${props.end}` : '- ' + props.start}
           </h2>
           <h1>
-            Loggit!
+            {props.title}
           </h1>
         </div>
         <div className='project-container'>
