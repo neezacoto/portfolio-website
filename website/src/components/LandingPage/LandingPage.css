@@ -517,6 +517,11 @@ but for the scope of this project it really doesn't matter */
   padding: 4em 6em;
 }
 
+#contact-section * {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
 .social-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +610,9 @@ but for the scope of this project it really doesn't matter */
   .social:last-child {
     padding-top: 1em;
   }
+}
+
+@media (max-width: 535px) {
   .social-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -615,6 +623,9 @@ but for the scope of this project it really doesn't matter */
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
     margin-left: -3.5em;
+  }
+  .social:last-child {
+    padding-top: 0em;
   }
 }
 /*# sourceMappingURL=LandingPage.css.map */

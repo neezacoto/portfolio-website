@@ -543,7 +543,12 @@ but for the scope of this project it really doesn't matter */
 
 #contact-section {
     padding: 4em 6em;
+    * {
+        transition: all 500ms;
+    }
 }
+
+
 
 .social-container {
     display: flex;
@@ -581,6 +586,8 @@ but for the scope of this project it really doesn't matter */
     padding: 0;
     color: inherit;
 }
+
+
 
 @media (max-width: 1120px) and (min-width: 981px ) {
     .social-container {
@@ -624,6 +631,10 @@ but for the scope of this project it really doesn't matter */
         }
     }
 
+    
+}
+
+@media (max-width: 535px) {
     .social-links {
         display: flex;
         gap: 0 !important;
@@ -632,5 +643,11 @@ but for the scope of this project it really doesn't matter */
     .social {
         transform: scale(.8);
         margin-left: -3.5em;
+    }
+
+    .social {
+        &:last-child {
+            padding-top: 0em;
+        }
     }
 }
