@@ -230,7 +230,7 @@ li {
     }
 
     .title h2 {
-        font-size: 1.4em;
+        font-size: 1.3em;
         white-space: nowrap;
         margin-bottom: 0;
     }
@@ -481,8 +481,61 @@ but for the scope of this project it really doesn't matter */
 }
 
 @media (max-width: 739px){
+    #personal-section .title h1, #personal-section .title h2{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
     .bio-container {
         flex-direction: column-reverse;
+        p {
+            width: 15em;
+        }
+
+    }
+    .bio {
+        width: 100%;
+        z-index: 11;
+    }
+
+    .gallery {
+        width: 0;
+        margin-top: 4em;
+        min-height: 916px;
+        height: 916px;
+        top:0;
+        position: relative;
+        margin-bottom: -15em;
+        
+    }
+
+    #personal-section {
+        padding: 1em;
+    }
+
+    .img-1 {
+        width: 340px;
+       
+    }
+    
+    .img-2 {
+        top: 10em;
+        left: 9vw;
+        width: 300px;
+    }
+    
+    .img-3 {
+  
+        top: 20em;
+        left: 1vw;
+        
+    }
+
+    .img-4 {
+        width: 251px;
+        top: 43em;
+        left: 20vw;
     }
 }
 
@@ -497,8 +550,7 @@ but for the scope of this project it really doesn't matter */
 }
 
 .social {
-    padding: 0 2em 0 1em;
-    
+    padding: 0 4em 0 1em;
 }
 
 .social:first-child {
@@ -531,9 +583,54 @@ but for the scope of this project it really doesn't matter */
 }
 
 @media (max-width: 1120px) and (min-width: 981px ) {
+    .social-container {
+        flex-direction: column;
+    }
     
+    .social {
+        width: 480px;
+        min-width: 480px;
+        border-right: 3px solid #D8D8D8;
+        &:last-child {
+            padding-top: 1em;
+        }
+    }
 }
 
 @media (max-width: 980px) {
+
+    #contact-section {
+        padding: 4em 2em;
+    }
+
+    .social-container {
+        flex-direction: column;
+    }
     
+    .social {
+        width: 480px;
+        min-width: 480px;
+        border-right: none !important;
+        &:first-child + ::before {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #D8D8D8;
+            margin-bottom: 1em;
+        }
+        &:last-child {
+            padding-top: 1em;
+        }
+    }
+
+    .social-links {
+        display: flex;
+        gap: 0 !important;
+    }
+    
+    .social {
+        transform: scale(.8);
+        margin-left: -3.5em;
+    }
 }
