@@ -74,7 +74,7 @@ li:hover {
     font-size: 1.3em;
   }
   li {
-    padding: .4em .7em;
+    padding: 1em .7em;
     -webkit-transition: -webkit-box-shadow 400ms;
     transition: -webkit-box-shadow 400ms;
     transition: box-shadow 400ms;
@@ -285,28 +285,30 @@ li:hover {
 }
 
 @media (max-width: 980px) {
+  .title {
+    text-align: center;
+  }
   .title h1 {
     line-height: .9em;
-    font-size: 4em;
+    font-size: 3em;
   }
   .title h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     white-space: nowrap;
     margin-bottom: 0;
   }
   .cards {
-    margin-top: -4em;
     position: relative;
     -ms-grid-columns: (auto)[1];
         grid-template-columns: repeat(1, auto);
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    grid-row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-row-gap: 1em;
   }
   #project-section {
-    padding: 4em 2em;
+    padding: 2em 2em;
   }
 }
 
@@ -341,7 +343,6 @@ li:hover {
   font-size: 1.4rem;
   width: 40%;
   color: #383838;
-  min-width: 436px;
 }
 
 /* image gallary */
@@ -519,9 +520,9 @@ but for the scope of this project it really doesn't matter */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .bio-container {
     -webkit-box-orient: vertical;
@@ -531,6 +532,7 @@ but for the scope of this project it really doesn't matter */
   }
   .bio-container p {
     width: 15em;
+    font-size: 1em;
   }
   .bio {
     width: 100%;
@@ -564,6 +566,42 @@ but for the scope of this project it really doesn't matter */
     width: 251px;
     top: 43em;
     left: 20vw;
+  }
+  .read-container {
+    position: relative;
+    overflow-y: hidden;
+    height: 225px;
+  }
+  .cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #e9e9e9;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 233, 233, 0)), to(white));
+    background: linear-gradient(180deg, rgba(233, 233, 233, 0) 0%, white 100%);
+  }
+  .read-container[data-visible='true'] {
+    height: 100%;
+  }
+  .read-container[data-visible='true'] .cover {
+    background: none !important;
+  }
+  .read-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background: none;
+    font-size: 1.2em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
   }
 }
 
@@ -683,9 +721,17 @@ but for the scope of this project it really doesn't matter */
     gap: 0 !important;
   }
   .social {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    padding: 0 !important;
+    margin-left: 0 !important;
+    min-width: 0px;
+    width: 100%;
     margin-left: -3.5em;
+  }
+  .social:first-child {
+    margin-bottom: 1em;
+  }
+  .social:first-child p {
+    font-size: 1.2em;
   }
   .social:last-child {
     padding-top: 0em;

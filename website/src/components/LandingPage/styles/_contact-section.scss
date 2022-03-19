@@ -106,11 +106,21 @@
     }
     
     .social {
-        transform: scale(.8);
+        padding: 0 !important;
+        margin-left: 0 !important;
+        min-width: 0px;
+        width: 100%;
         margin-left: -3.5em;
     }
 
     .social {
+        
+        &:first-child {
+            p {
+                font-size: 1.2em;
+            }
+            margin-bottom: 1em;
+        }
         &:last-child {
             padding-top: 0em;
         }

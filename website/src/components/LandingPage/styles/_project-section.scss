@@ -36,27 +36,30 @@
 }
 
 @media (max-width: 980px) {
+    .title {
+        text-align: center;
+    }
     .title h1 {
         line-height: .9em;
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .title h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         white-space: nowrap;
         margin-bottom: 0;
     }
 
     .cards {
-        margin-top: -4em;
+        
         position: relative;
         grid-template-columns: repeat(1,auto);
         width: 100%;
-        justify-content: flex-start;
-        grid-row-gap: 0;
+        justify-content: center;
+        grid-row-gap: 1em;
     }
 
     #project-section {
-        padding: 4em 2em;
+        padding: 2em 2em;
     }
 }
