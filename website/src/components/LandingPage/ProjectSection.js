@@ -21,6 +21,12 @@ function ProjectSection(props) {
                     end={''} 
                     image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} 
                 />
+                <ProjectCard 
+                    title='Loggit!'
+                    start={'2022'} 
+                    end={''} 
+                    image={'https://cdn.discordapp.com/attachments/857973303880187916/954183582803460126/unknown.png'} 
+                />
             </div>
             
         </section>

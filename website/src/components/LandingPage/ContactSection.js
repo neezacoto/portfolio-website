@@ -2,11 +2,12 @@ import React from 'react'
 import { SiLinkedin, SiTwitter, SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
 import './styles/LandingPage.scss'
 
-function ContactSection() {
+function ContactSection(props) {
   return (
-    <section id="contact-section">
+    <section id="contact-section"  >
+        <div id="parallax-container" style={props.parallax.contact} >
             <div className='title'>
-                <h2>-Contact Info & Social Media</h2>
+                <h2>-Contact Info {'&'} Social Media</h2>
                 <h1>Let's Get In Touch</h1>
             </div>
             
@@ -48,6 +49,7 @@ function ContactSection() {
 
                 </div>
             </div>
+        </div>
         </section>
   )
 }

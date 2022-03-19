@@ -4,37 +4,37 @@ function PersonalSection(props) {
   return (
     <section id="personal-section">
             <div className='personal-content-container'>
-                <div className='title right'>
-                    <h2>- Personal Background</h2>
+                <div className='title right' style={props.parallax.personalSectionTitle} >
+                    <h2 >- Personal Background</h2>
                     <h1>Outside The Office</h1>
                 </div>
                 <div className='bio-container'>
                     <div className='gallery'>
-                        <div className='personal img-1'>
+                        <div className='personal img-1' style={props.parallax.img1}>
                             <img src="https://cdn.discordapp.com/attachments/827006903388471337/941835011613687868/6photo.png" />
                         </div>
-                        <div className='personal img-2'>
+                        <div className='personal img-2' style={props.parallax.img2}>
                             <img src="https://cdn.discordapp.com/attachments/857973303880187916/954197110285275146/EE365643-6AA4-41A1-872B-5EB81117F909.jpg" />
                         </div>
-                        <div className='personal img-3'>
+                        <div className='personal img-3' style={props.parallax.img3}>
                             
                             <img src="https://cdn.discordapp.com/attachments/857973303880187916/954199203599499264/263522527_2695636460738287_4005296526571001602_n.jpg"/>
                         </div>
-                        <div className='personal img-4'>
+                        <div className='personal img-4' style={props.parallax.img4}>
                             <img src="https://cdn.discordapp.com/attachments/857973303880187916/954205531818565683/image_8.png" />
                         </div>
                     </div>
-                    <div className='bio'>
+                    <div className='bio' style={props.parallax.personalBio}>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                                Other than spending my free time on coding, you'll find me involved in the arts and taking in nature.<br/><br/>
+                                When it comes to art, my medium of choice is digital, with a mix of cartoon/semi-realism. I've been designing
+                                and doing art for as long as I can remember. It comes in handy when working on coding projects, because
+                                I'm always laser focused on functionality and presentation. I believe that someone can create an amazing tool, 
+                                but if the design isn't there, it all falls apart.<br/><br/> My favorite part about the outdoors are the clouds. It feels
+                                absolutely surreal to have these giants in the sky, looking as if they painted. Nature as a whole I believe is something beautiful, 
+                                becaues no one moment is ever the same—ever fleeting, ever beautiful.
 
-                                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.<br/><br/>
-
-                                Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
-
-                                Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.<br/><br/>
-
-                                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+                                
                             </p>
                     </div>
                 </div>

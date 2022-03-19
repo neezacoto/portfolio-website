@@ -31,14 +31,44 @@ function LandingPage() {
             transition: 'transform 500ms'
         },
         projectCards: {
-            transform: `translateX(${(window.pageYOffset < 500)? offsetY * .9 -500 :
-                 (window.pageYOffset > 900)? offsetY * 1 -900 : 0 }px)`,
+            transform: `translateX(${(window.pageYOffset < 500)? offsetY * .9 -500 : 0 }px)`,
             transition: 'transform 500ms'
         },
         personalSectionTitle: {
-            transform: `translateX(-${ (window.pageYOffset < 1000)? offsetY * .9 + 600: 0 }px)`,
-            transition: 'transform 500ms'
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.1 + -1800: 0 }px)`,
+            transition: 'transform 800ms',
+        },
+        img1: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.3 + -2000: 0 }px)`,
+            transition: 'transform 800ms',
+        },
+        img2: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.5 + -2400: 0 }px)`,
+            transition: 'transform 800ms',
+        },
+        img3: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.4 + -2000: 0 }px)`,
+            transition: 'transform 800ms',
+        },
+        img4: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.2 + -2000: 0 }px)`,
+            transition: 'transform 800ms',
+        },
+        img5: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.3 + -2800: 0 }px)`,
+            transition: 'transform 1000ms',
+        },
+        personalBio: {
+            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * .8 : 0 }px)`,
+            transition: 'transform 1000ms',
+        },
+        contact: {
+            transform: `translateY(${ (window.pageYOffset < 1100)? offsetY * .8 : 0 }px)`,
+            transition: 'transform 1000ms',
         }
+
+
+        
 
 
 
