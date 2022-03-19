@@ -259,6 +259,8 @@ li {
 #personal-section {
   padding: 4em 6em;
   margin-bottom: 12em;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 #personal-section .title h1, #personal-section .title h2 {
@@ -284,14 +286,25 @@ li {
   font-size: 1.4rem;
   width: 40%;
   color: #383838;
+  min-width: 436px;
 }
 
 /* image gallary */
 .gallery {
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 116.66667vh);
   position: relative;
   margin-top: -10em;
   margin-left: 0;
   width: 50%;
+}
+
+@media (max-aspect-ratio: 7 / 3) {
+  .gallery {
+    top: calc(50vh - 21.42857vw);
+    left: 0;
+  }
 }
 
 .personal {
@@ -352,23 +365,109 @@ but for the scope of this project it really doesn't matter */
           transform: scale(1.1);
 }
 
-@media (max-width: 1500px) and (min-width: 1347px) {
-  .gallery {
-    -webkit-transform: scale(calc());
-            transform: scale(calc());
-    margin-left: -5%;
-    margin-top: -3em;
+@media (max-width: 1524px) and (min-width: 980px) {
+  .img-1 {
+    width: 515px;
+  }
+  .img-2 {
+    top: 12em;
+    left: 14vw;
+  }
+  .img-3 {
+    top: 23em;
+    left: 1vw;
+  }
+  .img-4 {
+    width: 291px;
+    top: 35em;
+    left: 19vw;
   }
 }
 
-/* @media (max-width: 1346px) and (min-width: 980px ) {
-    .gallery {
-        transform: scale(.78);
-        margin-left: -5%;
-        margin-top: -3em;
+@media (max-width: 1524px) and (min-width: 980px) {
+  #personal-section {
+    padding: 2em;
+  }
+  .gallery {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin-left: -1em;
+  }
+  .img-1 {
+    width: 515px;
+  }
+  .img-2 {
+    top: 12em;
+    left: 12vw;
+  }
+  .img-3 {
+    top: 23em;
+    left: 1vw;
+  }
+  .img-4 {
+    width: 291px;
+    top: 35em;
+    left: 19vw;
+  }
+}
+
+@media (max-width: 980px) and (min-width: 740px) {
+  .bio {
+    z-index: 11;
+  }
+  .bio p {
+    border-radius: 20px;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  @supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))) {
+    .bio p {
+      background-color: rgba(255, 255, 255, 0.89);
+      -webkit-backdrop-filter: blur(0.6rem);
+              backdrop-filter: blur(0.6rem);
     }
-    
-} */
+  }
+  .gallery {
+    width: 0;
+    margin-top: 4em;
+    min-height: 916px;
+    height: 916px;
+    top: 0;
+    position: relative;
+    margin-bottom: -15em;
+    margin-left: 6%;
+  }
+  #personal-section {
+    padding: 1em;
+  }
+  .img-1 {
+    width: 340px;
+  }
+  .img-2 {
+    top: 10em;
+    left: 9vw;
+    width: 300px;
+  }
+  .img-3 {
+    top: 20em;
+    left: 1vw;
+  }
+  .img-4 {
+    width: 251px;
+    top: 43em;
+    left: 10vw;
+  }
+}
+
+@media (max-width: 739px) {
+  .bio-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 /* contact section */
 #contact-section {
   padding: 4em 6em;
