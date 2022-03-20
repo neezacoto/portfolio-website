@@ -27,39 +27,39 @@ function LandingPage() {
             transform: `translateX(${offsetY * .9}px)`
         },
         projectSectionTitle: {
-            transform: `translateX(${ (window.pageYOffset < 500)? offsetY * .9 + -600: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 450)? offsetY * 1.3 + -600: 0 }px)`,
             transition: 'transform 500ms'
         },
         projectCards: {
-            transform: `translateX(${(window.pageYOffset < 500)? offsetY * .9 -500 : 0 }px)`,
+            transform: `translateX(${(window.pageYOffset < 500)? offsetY * 1 -500 : 0 }px)`,
             transition: 'transform 500ms'
         },
         personalSectionTitle: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.1 + -1800: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1300)? offsetY * 1.4 + -1800: 0 }px)`,
             transition: 'transform 800ms',
         },
         img1: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.3 + -2000: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1400)? offsetY * 1.5 + -2000: 0 }px)`,
             transition: 'transform 800ms',
         },
         img2: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.5 + -2400: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1400)? offsetY * 1.7 + -2400: 0 }px)`,
             transition: 'transform 800ms',
         },
         img3: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.4 + -2000: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1400)? offsetY * 1.4 + -2000: 0 }px)`,
             transition: 'transform 800ms',
         },
         img4: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.2 + -2000: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1400)? offsetY * 1.2 + -2000: 0 }px)`,
             transition: 'transform 800ms',
         },
         img5: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * 1.3 + -2800: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1400)? offsetY * 1.3 + -2800: 0 }px)`,
             transition: 'transform 1000ms',
         },
         personalBio: {
-            transform: `translateX(${ (window.pageYOffset < 1500)? offsetY * .8 : 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1300)? offsetY * .9 : 0 }px)`,
             transition: 'transform 1000ms',
         },
         contact: {

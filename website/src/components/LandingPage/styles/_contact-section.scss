@@ -2,10 +2,8 @@
 
 #contact-section {
     margin-bottom:  4em;
+    margin-top: -7em;
     padding: 0em 6em;
-    * {
-        transition: margin 500ms, transform 500ms;
-    }
     overflow:hidden;
 }
 
@@ -13,16 +11,8 @@
 
 .social-container {
     display: flex;
-}
-
-.social {
-    padding: 0 4em 0 1em;
-}
-
-.social:first-child {
-    border-right: 3px solid #D8D8D8;
-    padding-right: 5em;
-    margin-right: 5em;
+    gap: 3em;
+    
 }
 
 .social p {
@@ -53,30 +43,17 @@
 }
 
 
-
-@media (max-width: 1120px) and (min-width: 981px ) {
-    .social-container {
-        flex-direction: column;
-    }
-    
-    .social {
-        width: 480px;
-        min-width: 480px;
-        border-right: 3px solid #D8D8D8;
-        &:last-child {
-            padding-top: 1em;
-        }
-    }
-}
-
 @media (max-width: 980px) {
 
     #contact-section {
+        margin-top: 0 !important;
         padding: 4em 2em;
     }
 
     .social-container {
         flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
     
     .social {
@@ -91,9 +68,7 @@
             background: #D8D8D8;
             margin-bottom: 1em;
         }
-        &:last-child {
-            padding-top: 1em;
-        }
+        
     }
 
     
@@ -103,6 +78,10 @@
     .social-links {
         display: flex;
         gap: 0 !important;
+    }
+
+    .social-container {
+        gap: 0;
     }
     
     .social {

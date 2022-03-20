@@ -67,12 +67,12 @@ function PersonalSection(props) {
                                     to="read-bio"
                                     spy={true}
                                     smooth={true}
-                                    offset={-300}
-                                    duration={500}
+                                    offset={-200}
+                                    duration={300}
                                 >
                                     <button data-visible={toggleRead} className='read-more' for='read' onClick={showPersonal}>
                                         {readText}
-                                        <BiChevronUp className='pointer'/>
+                                        <BiChevronUp data-visible={toggleRead} className='pointer'/>
                                     </button> 
                                  </Link>
 

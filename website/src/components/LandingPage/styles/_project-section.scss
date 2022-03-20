@@ -21,17 +21,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    gap: 5em;
-    
-}
-
-@media (max-width: 1120px) and (min-width: 981px ) {
-
-    .cards {
-        grid-template-columns: repeat(2, auto);
-        gap: 0;
-        
-    }
+    gap: 3em;
     
 }
 

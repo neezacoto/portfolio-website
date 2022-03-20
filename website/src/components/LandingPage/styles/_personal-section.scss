@@ -7,10 +7,15 @@
 }
 
 
+
 #personal-section .title h1, #personal-section .title h2{
     display: flex;
     justify-content: right;
     
+}
+
+.read-more {
+    display: none;
 }
 
 .bio-container {
@@ -287,9 +292,11 @@ but for the scope of this project it really doesn't matter */
     }
 
     .read-container {
+        display: flex;
         position: relative;
         overflow-y: hidden;
         height: 225px;
+        justify-content: center;
         
     }
 
@@ -302,12 +309,15 @@ but for the scope of this project it really doesn't matter */
     }
 
     .read-container[data-visible='true'] {
+        height: 100%; 
         .cover {
             background: none !important;
         }
-        height: 100%; 
     }
-
+    .pointer[data-visible='true'] {
+        transform: rotate(180deg) ;
+    }
+    
     .read-more {
         display: flex;
         justify-content: center;
@@ -318,11 +328,7 @@ but for the scope of this project it really doesn't matter */
         margin: 0 !important;
         padding: 0 !important;
         width: 100%;
-        
+        cursor: pointer;
     }
-
-
-    
-
 
 }

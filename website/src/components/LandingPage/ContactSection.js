@@ -12,7 +12,7 @@ function ContactSection(props) {
             </div>
             
             <div className='social-container'>
-                <div className='social'>
+                <div className='social email'>
                     <p className='social-title'>
                         Email:
                     </p>
