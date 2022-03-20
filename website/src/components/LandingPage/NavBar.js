@@ -7,7 +7,7 @@ function NavBar() {
       
     <nav>
             <ul>
-                <li onClick={() => window.location.replace("/about")}>
+                <li>
                 <Link
                     activeClass="active"
                     to="about"
@@ -19,7 +19,7 @@ function NavBar() {
                     about
                 </Link>
                 </li>
-                <li onClick={() => window.location.replace("/portfolio")}>
+                <li>
                 <Link
                     activeClass="active"
                     to="project-section"
@@ -31,7 +31,7 @@ function NavBar() {
                     portfolio
                 </Link>
                 </li>
-                <li onClick={() => window.location.replace("/life")}>
+                <li>
                 <Link
                     activeClass="active"
                     to="personal-section"
@@ -43,7 +43,7 @@ function NavBar() {
                     life
                 </Link>
                 </li>
-                <li onClick={() => window.location.replace("/contact")}>
+                <li>
                 <Link
                     activeClass="active"
                     to="contact-section"
