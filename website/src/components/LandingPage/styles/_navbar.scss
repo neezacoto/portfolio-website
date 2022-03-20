@@ -67,13 +67,14 @@ li {
     }
 
     li {
-        padding: 1em .7em;
+        padding: 1em .5em;
         transition: box-shadow 400ms;
         &:hover {
             box-shadow: inset 0 -5px 0 black; 
             background: transparent;
         }
         a{
+            font-size: 1em;
             padding: 0;
         }
     }

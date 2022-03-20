@@ -21,10 +21,10 @@ function LandingPage() {
 
     const parallax = {
         faceCard: {
-            transform: `translateY(-${offsetY * .8}px)`
+            transform: `translateY(-${(window.pageYOffset > 0)? offsetY * .8 : 0}px)`
         },
         introBio: {
-            transform: `translateX(${offsetY * .9}px)`
+            transform: `translateX(${(window.pageYOffset > 0)? offsetY * .9 : 0}px)`
         },
         projectSectionTitle: {
             transform: `translateX(${ (window.pageYOffset < 450)? offsetY * 1.8 + -700: 0 }px)`,
