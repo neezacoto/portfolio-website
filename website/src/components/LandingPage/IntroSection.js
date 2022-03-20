@@ -4,7 +4,7 @@ import { BiChevronRight } from 'react-icons/bi'
 
 function IntroSection(props) {
   return (
-    <section id='intro-section'>
+    <section id='about'>
 
             
                 <div className='face-card' style={props.parallax.faceCard}>

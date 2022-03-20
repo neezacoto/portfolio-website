@@ -1,5 +1,5 @@
-/* Intro Section */
-#intro-section {
+/* about */
+#about {
     margin-top: 12em;
     padding: 1em;
 
@@ -80,12 +80,12 @@
 }
 
 
-#intro-section *, #intro-section{
+#about *, #about{
     transition: margin 600ms, transform 500ms, width 500ms,;
 }
 
 @media (max-width: 980px) {
-    #intro-section {
+    #about {
         flex-direction: column;
         justify-content: center;
         align-items: center;

@@ -94,8 +94,8 @@ li:hover {
   }
 }
 
-/* Intro Section */
-#intro-section {
+/* about */
+#about {
   margin-top: 12em;
   padding: 1em;
   display: -webkit-box;
@@ -182,7 +182,7 @@ li:hover {
   font-size: 1.3em;
 }
 
-#intro-section *, #intro-section {
+#about *, #about {
   -webkit-transition: margin 600ms, width 500ms, -webkit-transform 500ms;
   transition: margin 600ms, width 500ms, -webkit-transform 500ms;
   transition: margin 600ms, transform 500ms, width 500ms;
@@ -190,7 +190,7 @@ li:hover {
 }
 
 @media (max-width: 980px) {
-  #intro-section {
+  #about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -236,8 +236,8 @@ li:hover {
   }
 }
 
-/* Project section */
-#project-section {
+/* Prabout */
+#prabout {
   padding: 10em 6em;
 }
 
@@ -285,20 +285,20 @@ li:hover {
             justify-content: center;
     grid-row-gap: 1em;
   }
-  #project-section {
+  #prabout {
     padding: 2em 2em;
   }
 }
 
 /* personal background */
-#personal-section {
+#perabout {
   padding: 4em 6em;
   margin-bottom: 12em;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
-#personal-section .title h1, #personal-section .title h2 {
+#perabout .title h1, #perabout .title h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +423,7 @@ but for the scope of this project it really doesn't matter */
 }
 
 @media (max-width: 1524px) and (min-width: 980px) {
-  #personal-section {
+  #perabout {
     padding: 2em;
   }
   .gallery {
@@ -475,7 +475,7 @@ but for the scope of this project it really doesn't matter */
     margin-bottom: -15em;
     margin-left: 6%;
   }
-  #personal-section {
+  #perabout {
     padding: 1em;
   }
   .img-1 {
@@ -498,7 +498,7 @@ but for the scope of this project it really doesn't matter */
 }
 
 @media (max-width: 739px) {
-  #personal-section .title h1, #personal-section .title h2 {
+  #perabout .title h1, #perabout .title h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -529,7 +529,7 @@ but for the scope of this project it really doesn't matter */
     position: relative;
     margin-bottom: -15em;
   }
-  #personal-section {
+  #perabout {
     padding: 1em;
   }
   .img-1 {
@@ -598,8 +598,8 @@ but for the scope of this project it really doesn't matter */
   }
 }
 
-/* contact section */
-#contact-section {
+/* coabout */
+#coabout {
   margin-bottom: 4em;
   margin-top: -7em;
   padding: 0em 6em;
@@ -649,7 +649,7 @@ but for the scope of this project it really doesn't matter */
 }
 
 @media (max-width: 980px) {
-  #contact-section {
+  #coabout {
     margin-top: 0 !important;
     padding: 4em 2em;
   }

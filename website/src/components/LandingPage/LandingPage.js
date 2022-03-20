@@ -27,7 +27,7 @@ function LandingPage() {
             transform: `translateX(${offsetY * .9}px)`
         },
         projectSectionTitle: {
-            transform: `translateX(${ (window.pageYOffset < 450)? offsetY * 1.3 + -600: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 450)? offsetY * 1.3 + -800: 0 }px)`,
             transition: 'transform 500ms'
         },
         projectCards: {
@@ -59,7 +59,7 @@ function LandingPage() {
             transition: 'transform 1000ms',
         },
         personalBio: {
-            transform: `translateX(${ (window.pageYOffset < 1300)? offsetY * .9 : 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 1300)? 200 : 0 }%)`,
             transition: 'transform 1000ms',
         },
         contact: {
@@ -75,13 +75,14 @@ function LandingPage() {
     }
 
   return (
-    <> 
+    
+    <div id='page-container'> 
         <NavBar />
         <IntroSection parallax={parallax} />
         <ProjectSection parallax={parallax} />
         <PersonalSection parallax={parallax} />
         <ContactSection parallax={parallax} />
-    </>
+    </div>
   )
 }
 
