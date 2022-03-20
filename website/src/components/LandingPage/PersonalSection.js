@@ -10,9 +10,20 @@ function PersonalSection(props) {
         setToggleRead(!toggleRead);
     }
 
+    const handleClick = (e) => {
+        e.preventDefault()
+        const target = e.target.getAttribute('href');
+        const location = document.querySelector(target).offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: location,
+        })
+    }
+
 
   return (
-    <section id="personal-section">
+    <section id="life">
             <div className='personal-content-container'>
                 <div className='title right' style={props.parallax.personalSectionTitle} >
                     <h2 >- Personal Background</h2>
@@ -70,19 +81,12 @@ function PersonalSection(props) {
                                     <BiChevronUp className='pointer'/>
                                 </button> 
                                 :
-                                <Link
-                                    activeClass="active"
-                                    to="read-bio"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-200}
-                                    duration={0}
-                                >
+                                <a href='#life'>
                                     <button data-visible={toggleRead} className='read-more' for='read' onClick={showPersonal}>
                                         {readText}
                                         <BiChevronUp data-visible={toggleRead} className='pointer'/>
                                     </button> 
-                                 </Link>
+                                 </a>
 
                             }
                             
