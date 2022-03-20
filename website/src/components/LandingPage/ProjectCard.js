@@ -7,7 +7,7 @@ function ProjectCard(props) {
 
 
   return (
-    <a href={props.link} target="_blank" >    
+    <a href={props.link} target="_blank" rel="noopener noreferrer">    
       <div className='card-container' onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
 
         <div className='card-cover'>
@@ -37,7 +37,7 @@ function ProjectCard(props) {
           </p>
         </div>
         <div className='project-container'>
-        <img src={props.image} alt='project image' className={(isHovering)? 'hovering': ''}/>
+        <img src={props.image} alt='project showcase' className={(isHovering)? 'hovering': ''}/>
         </div>
       </div>
     </a>

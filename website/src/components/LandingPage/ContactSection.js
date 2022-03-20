@@ -26,19 +26,19 @@ function ContactSection(props) {
                         Socials:
                     </p>
                     <div className='social-links'>
-                        <a href="https://www.linkedin.com/in/crudder-ma/" target="_blank">
+                        <a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
                             <SiLinkedin />
                         </a>
-                        <a href="https://twitter.com/crubber_" target="_blank">
+                        <a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
                             <SiTwitter />
                         </a>
-                        <a href="https://www.facebook.com/christian.rudder.56" target="_blank">
+                        <a href="https://www.facebook.com/christian.rudder.56" target="_blank" rel="noopener noreferrer">
                             <SiFacebook />
                         </a>
-                        <a href="https://github.com/neezacoto" target="_blank">
+                        <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
                             <SiGithub />
                         </a>
-                        <a href="https://www.instagram.com/mizacoto/" target="_blank">
+                        <a href="https://www.instagram.com/mizacoto/" target="_blank" rel="noopener noreferrer">
                             <SiInstagram />
                         </a>
                         

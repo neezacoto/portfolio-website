@@ -20,18 +20,26 @@ function PersonalSection(props) {
                 </div>
                 <div className='bio-container'>
                     <div className='gallery'>
-                        <div className='personal img-1' style={props.parallax.img1}>
-                            <img src="https://cdn.discordapp.com/attachments/827006903388471337/941835011613687868/6photo.png" />
+                        <div className='personal img-1' style={props.parallax.img1} >
+                            <img src="https://cdn.discordapp.com/attachments/827006903388471337/941835011613687868/6photo.png"
+                                    alt='drawn by christian'
+                                 />
                         </div>
-                        <div className='personal img-2' style={props.parallax.img2}>
-                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954197110285275146/EE365643-6AA4-41A1-872B-5EB81117F909.jpg" />
+                        <div className='personal img-2' style={props.parallax.img2} >
+                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954197110285275146/EE365643-6AA4-41A1-872B-5EB81117F909.jpg"
+                                alt='taken by christian'
+                             />
                         </div>
-                        <div className='personal img-3' style={props.parallax.img3}>
+                        <div className='personal img-3' style={props.parallax.img3} >
                             
-                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954199203599499264/263522527_2695636460738287_4005296526571001602_n.jpg"/>
+                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954199203599499264/263522527_2695636460738287_4005296526571001602_n.jpg"
+                                alt='taken by christian'
+                            />
                         </div>
-                        <div className='personal img-4' style={props.parallax.img4}>
-                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954205531818565683/image_8.png" />
+                        <div className='personal img-4' style={props.parallax.img4} >
+                            <img src="https://cdn.discordapp.com/attachments/857973303880187916/954205531818565683/image_8.png"
+                                alt='taken by christian'
+                             />
                         </div>
                     </div>
                     <div className='bio' style={props.parallax.personalBio}>

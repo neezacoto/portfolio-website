@@ -24,6 +24,7 @@ function IntroSection(props) {
                 </div>
                 <a href='https://medium.com/hack-diversity-movement/cohort-stories-meet-christian-1c385ebde885'
                         target='_blank'
+                        rel="noopener noreferrer"
                         className='link-learn'
                     >
                     
