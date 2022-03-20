@@ -121,5 +121,9 @@ img.hovering {
     .card-container {
         max-width: 245px;
     }
+
+    .card-cover:hover{
+        opacity: 0;
+    }
     
 }
