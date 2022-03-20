@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    max-width: 246px;
+    height: 124px;
+    
+}
+
+.project-title h2 {
+    color: #A7A7A7;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0em;
+
+}
+
+
+.project-title h1 {
+    line-height: .9em;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+.card-container {
+    position: relative;
+    background-color: black;
+    width: auto;
+    height: auto;
+    max-width: 245px;
+    max-height: 358px;
+    overflow: hidden;
+    border-radius: 25px;
+
+    box-shadow: 10px 10px 13px -12px black;
+    transition: transform 500ms, border-radius 250ms;
+    min-width: 245px;
+    
+    &:hover {
+        border-radius: 17px;
+        box-shadow: 10px 10px 15px -12px black;
+    }
+    cursor: pointer;
+    p {
+        font-size: .8em;
+        color: rgb(207, 207, 207);
+        line-height: 2em;
+    }
+    .project-title {
+        h1,h2,p {
+            text-decoration: underline black;
+        }
+    }
+}
+
+.card-cover {
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    z-index: 13;
+    
+    color: white;
+
+    h2 {
+        font-weight: 300;
+    }
+
+    .long-disc {
+        color:rgb(200, 200, 200)
+    }
+
+    .card-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+    }
+    transition: opacity 200ms;
+    &:hover {
+        opacity: 1;
+        
+    }
+    
+}
+
+.project-container {
+    overflow: hidden;
+    position: relative;
+    height: 245px;
+    width: 245px;
+    
+    
+}
+
+.project-container img {
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: transform 250ms;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 980px) {
+    .card-container {
+        max-width: 245px;
+    }
+    
+}

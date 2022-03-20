@@ -68,7 +68,7 @@ function PersonalSection(props) {
                                     spy={true}
                                     smooth={true}
                                     offset={-200}
-                                    duration={300}
+                                    duration={0}
                                 >
                                     <button data-visible={toggleRead} className='read-more' for='read' onClick={showPersonal}>
                                         {readText}
