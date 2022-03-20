@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import { BiChevronUp } from 'react-icons/bi'
-import { Link } from 'react-scroll'
 
 function PersonalSection(props) {
 
@@ -9,18 +8,6 @@ function PersonalSection(props) {
     const showPersonal = () => {
         setToggleRead(!toggleRead);
     }
-
-    const handleClick = (e) => {
-        e.preventDefault()
-        const target = e.target.getAttribute('href');
-        const location = document.querySelector(target).offsetTop;
-
-        window.scrollTo({
-            left: 0,
-            top: location,
-        })
-    }
-
 
   return (
     <section id="life">
