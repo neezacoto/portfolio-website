@@ -1,60 +1,33 @@
 import React from 'react'
-import {Link} from 'react-scroll'
 import './styles/LandingPage.scss'
+import { paths } from './nav-links'
 
 function NavBar() {
+    const handleClick = (e) => {
+        e.preventDefault()
+        const target = e.target.getAttribute('href');
+        const location = document.querySelector(target).offsetTop;
+
+        window.scrollTo({
+            left: 0,
+            top: location - 150,
+        })
+    }
+
+
   return (
-      
     <nav>
             <ul>
-                <li>
-                <Link
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-300}
-                    duration={500}
-                >
-                    about
-                </Link>
-                </li>
-                <li>
-                <Link
-                    activeClass="active"
-                    to="project-section"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >
-                    portfolio
-                </Link>
-                </li>
-                <li>
-                <Link
-                    activeClass="active"
-                    to="personal-section"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >
-                    life
-                </Link>
-                </li>
-                <li>
-                <Link
-                    activeClass="active"
-                    to="contact-section"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >
-                    contact
-                </Link>
-                </li>
+                {paths.map((path) => {
+                    return (
+                        <li>
+                            <a href= {path.url} key={path.id} onClick={handleClick}>
+                                {path.text}
+                             </a>
+                        </li>
+                        
+                    ) 
+                })}
             </ul>
         </nav>
   )

@@ -4,7 +4,7 @@ import './styles/LandingPage.scss'
 
 function ContactSection(props) {
   return (
-    <section id="contact-section"  >
+    <section id="contact"  >
         <div id="parallax-container"  >
             <div className='title'>
                 <h2>-Contact Info {'&'} Social Media</h2>
@@ -16,9 +16,8 @@ function ContactSection(props) {
                     <p className='social-title'>
                         Email:
                     </p>
-                    <p>
-                        RingTheBellPepper@gmail.com
-                    </p>
+                    <a href="mailto:RingTheBellPepper@gmail.com">RingTheBellPepper@gmail.com</a>
+                    
 
                 </div>
                 <div className='social'>

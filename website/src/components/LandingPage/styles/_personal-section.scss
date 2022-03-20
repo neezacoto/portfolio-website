@@ -1,6 +1,6 @@
 /* personal background */
 
-#personal-section {
+#life {
     padding: 4em 6em;
     margin-bottom: 12em;
     transition: all 500ms;
@@ -8,7 +8,7 @@
 
 
 
-#personal-section .title h1, #personal-section .title h2{
+#life .title h1, #life .title h2{
     display: flex;
     justify-content: right;
     
@@ -138,7 +138,7 @@ but for the scope of this project it really doesn't matter */
 @media (max-width: 1524px) and (min-width: 980px ) {
    
     
-    #personal-section {
+    #life {
         padding: 2em;
     }
     .gallery {
@@ -202,7 +202,7 @@ but for the scope of this project it really doesn't matter */
         
     }
 
-    #personal-section {
+    #life {
         padding: 1em;
     }
 
@@ -233,7 +233,7 @@ but for the scope of this project it really doesn't matter */
 
 @media (max-width: 739px){
 
-    #personal-section .title h1, #personal-section .title h2{
+    #life .title h1, #life .title h2{
         display: flex;
         justify-content: center;
         
@@ -263,7 +263,7 @@ but for the scope of this project it really doesn't matter */
         
     }
 
-    #personal-section {
+    #life {
         padding: 1em;
     }
 
