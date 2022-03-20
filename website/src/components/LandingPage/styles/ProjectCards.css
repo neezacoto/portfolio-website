@@ -122,7 +122,7 @@
   transition: transform 250ms, -webkit-transform 250ms;
 }
 
-.project-container img:hover {
+img.hovering {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

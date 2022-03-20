@@ -640,6 +640,8 @@ but for the scope of this project it really doesn't matter */
 .social-links a {
   padding: 0;
   color: inherit;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
 }
 
 .social-links a:hover {

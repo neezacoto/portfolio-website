@@ -108,9 +108,11 @@
     bottom: 0;
     right: 0;
     transition: transform 250ms;
-    &:hover {
-        transform: scale(1.02);
-    }
+    
+}
+
+img.hovering {
+    transform: scale(1.02);
 }
 
 @media (max-width: 980px) {
