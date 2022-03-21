@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/LandingPage.scss'
-import { paths } from './nav-links'
+import {Link} from 'react-scroll'
 
 function NavBar() {
     const handleClick = (e) => {
@@ -18,16 +18,54 @@ function NavBar() {
   return (
     <nav>
             <ul>
-                {paths.map((path) => {
-                    return (
-                        <li>
-                            <a href= {path.url} key={path.id} onClick={handleClick}>
-                                {path.text}
-                             </a>
-                        </li>
-                        
-                    ) 
-                })}
+            <li>
+                <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-300}
+                    duration={500}
+                >
+                    about
+                </Link>
+                </li>
+                <li>
+                <Link
+                    activeClass="active"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    portfolio
+                </Link>
+                </li>
+                <li>
+                <Link
+                    activeClass="active"
+                    to="life"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    life
+                </Link>
+                </li>
+                <li>
+                <Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    contact
+                </Link>
+                </li>
             </ul>
         </nav>
   )

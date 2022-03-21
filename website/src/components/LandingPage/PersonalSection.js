@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { BiChevronUp } from 'react-icons/bi'
+import {Link} from 'react-scroll'
 
 function PersonalSection(props) {
 
@@ -68,12 +69,19 @@ function PersonalSection(props) {
                                     <BiChevronUp className='pointer'/>
                                 </button> 
                                 :
-                                <a href='#life'>
+                                <Link
+                                    activeClass="active"
+                                    to="read-bio"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration={0}
+                                >
                                     <button data-visible={toggleRead} className='read-more' for='read' onClick={showPersonal}>
                                         {readText}
                                         <BiChevronUp data-visible={toggleRead} className='pointer'/>
                                     </button> 
-                                 </a>
+                                 </Link>
 
                             }
                             
