@@ -38,7 +38,9 @@ function ProjectCard(props) {
           </p>
         </div>
         <div className='project-container'>
-        <img src={props.image} alt='project showcase' className={(isHovering)? 'hovering': ''}/>
+          <div className='showcase-cover'/>
+            <img src={props.image} alt='project showcase' className={(isHovering)? 'hovering': ''}/>
+          
         </div>
       </div>
     
