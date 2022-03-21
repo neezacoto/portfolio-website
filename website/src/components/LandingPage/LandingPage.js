@@ -27,11 +27,11 @@ function LandingPage() {
             transform: `translateX(${(window.pageYOffset > 0)? offsetY * .9 : 0}px)`
         },
         projectSectionTitle: {
-            transform: `translateX(${ (window.pageYOffset < 450)? offsetY * 1.8 + -700: 0 }px)`,
+            transform: `translateX(${ (window.pageYOffset < 410)? offsetY * 1.8 + -700: 0 }px)`,
             transition: 'transform 500ms'
         },
         projectCards: {
-            transform: `translateX(${(window.pageYOffset < 480)? offsetY * 2.5 -1000 : 0 }px)`,
+            transform: `translateX(${(window.pageYOffset < 410)? offsetY * 2.5 -1000 : 0 }px)`,
             transition: 'transform 500ms'
         },
         personalSectionTitle: {

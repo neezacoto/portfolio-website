@@ -4,9 +4,6 @@
     padding: 4em 6em;
     margin-bottom: 12em;
     transition: all 500ms;
-    a{
-        scroll-behavior: auto !important;
-    }
 }
 
 
@@ -30,6 +27,7 @@
 }
 
 .bio {
+    position: relative;
     font-size: 1.4rem;
     width: 40%;
     color: #383838;

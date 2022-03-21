@@ -41,7 +41,7 @@ function PersonalSection(props) {
                              />
                         </div>
                     </div>
-                    <div className='bio' style={props.parallax.personalBio}>
+                    <div className='bio' style={props.parallax.personalBio}  data-visible={toggleRead}>
                             {/* <p>
                                 Other than spending my free time on coding, you'll find me involved in the arts and taking in nature.<br/><br/>
                                 When it comes to art, my medium of choice is digital, with a mix of cartoon/semi-realism. I've been designing
@@ -52,7 +52,7 @@ function PersonalSection(props) {
                                 becaues no one moment is ever the same—ever fleeting, ever beautiful.
                             </p> */}
                             <div className='read-container' data-visible={toggleRead} id='read-bio'>
-                                <div className='cover' />
+                                
                                 <p>
                                     Other than spending my free time on coding, you'll find me involved in the arts and taking in nature.<br/><br/>
                                     When it comes to art, my medium of choice is digital, with a mix of cartoon/semi-realism. I've been designing
@@ -62,6 +62,7 @@ function PersonalSection(props) {
                                     absolutely surreal to have these giants in the sky, looking as if they painted. Nature as a whole I believe is something beautiful, 
                                     becaues no one moment is ever the same—ever fleeting, ever beautiful.
                                 </p>
+                                <div className='cover' />
                             </div>
                             {(!toggleRead)? 
                                 <button data-visible={toggleRead} className='read-more' for='read' onClick={showPersonal}>
@@ -81,11 +82,12 @@ function PersonalSection(props) {
                                         {readText}
                                         <BiChevronUp data-visible={toggleRead} className='pointer'/>
                                     </button> 
+                                    
                                  </Link>
 
                             }
                             
-                             
+                            
                     </div>
                 </div>
             </div>
