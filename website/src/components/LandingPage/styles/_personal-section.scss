@@ -318,7 +318,13 @@ but for the scope of this project it really doesn't matter */
         transform: rotate(180deg) ;
     }
     
+    #life{
+        a {
+            text-decoration: none;
+        }
+    }
     .read-more {
+        
         display: flex;
         justify-content: center;
         align-items: center;

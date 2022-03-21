@@ -5,7 +5,7 @@ import IntroSection from './IntroSection'
 import ProjectSection from './ProjectSection'
 import PersonalSection from './PersonalSection'
 import ContactSection from './ContactSection'
-
+import Footer from './Footer'
 
 function LandingPage() {
 
@@ -82,6 +82,7 @@ function LandingPage() {
         <ProjectSection parallax={parallax} />
         <PersonalSection parallax={parallax} />
         <ContactSection parallax={parallax} />
+        <Footer />
     </div>
   )
 }
