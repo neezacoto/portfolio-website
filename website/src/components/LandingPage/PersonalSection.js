@@ -59,7 +59,7 @@ function PersonalSection(props) {
                                     and doing art for as long as I can remember. It comes in handy when working on coding projects, because
                                     I'm always laser focused on functionality and presentation. I believe that someone can create an amazing tool, 
                                     but if the design isn't there, it all falls apart.<br/><br/> My favorite part about the outdoors are the clouds. It feels
-                                    absolutely surreal to have these giants in the sky, looking as if they painted. Nature as a whole I believe is something beautiful, 
+                                    absolutely surreal to have these giants in the sky, looking as if they are painted. Nature as a whole I believe is something beautiful, 
                                     becaues no one moment is ever the same—ever fleeting, ever beautiful.
                                 </p>
                                 <div className='cover' />
