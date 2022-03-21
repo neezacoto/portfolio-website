@@ -31,7 +31,7 @@ function LandingPage() {
             transition: 'transform 500ms'
         },
         projectCards: {
-            transform: `translateX(${(window.pageYOffset < 500)? offsetY * 2.5 -1000 : 0 }px)`,
+            transform: `translateX(${(window.pageYOffset < 480)? offsetY * 2.5 -1000 : 0 }px)`,
             transition: 'transform 500ms'
         },
         personalSectionTitle: {

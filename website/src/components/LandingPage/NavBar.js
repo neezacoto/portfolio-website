@@ -10,7 +10,7 @@ function NavBar() {
 
         window.scrollTo({
             left: 0,
-            top: location - 150,
+            top: location - 200,
         })
     }
 
