@@ -1,4 +1,4 @@
-#Portfolio Website
+# Portfolio Website
 this was done during my 2022 spring break. I had just finished a MERN stack CRUD project in a team. I was limited to completing some UI, and got a lot done, but I wasn't fully aware how React worked. I was sort of stuck in my corner coding one functionality. So, over the spring break I practiced a dummy website following a tutorial, then I tried recreating my own navbar. I did this because I find it key to immediatly try to recall information that I learned to test myself. I got comfortable and learned a lot about creating react apps, and the work patterns that I would go through through setting up a React application. I deciceded to drop the navbar project, and build a portfolio, and host my first ever website. From there I grinded endlessly for three days, finishing on the sunday before school. It was crazy fun and I learned a lot!
 
 This is the original mockup I did on figma.
