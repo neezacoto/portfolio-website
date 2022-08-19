@@ -1,0 +1,26 @@
+.section-div {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 1px;
+    background-color: #7D7D7D;
+}
+.summary-div {
+    width: 3px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: #7D7D7D;
+
+    margin-right: ;
+}
+.summary-container {
+    display: grid;
+    gap: 1rem;
+
+    padding-left: 6rem;
+    grid-template-columns: 5fr 1fr 4fr;
+
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}

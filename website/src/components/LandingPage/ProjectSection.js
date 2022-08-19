@@ -1,14 +1,27 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import { Link } from 'react-router-dom';
 import './styles/LandingPage.scss'
+
 function ProjectSection(props) {
   return (
     <section id="portfolio" >
             <div className='title' style={props.parallax.projectSectionTitle}>
-                <h2>-Web Development</h2>
-                <h1>Personal Projects</h1>
+                <h2>- Experience</h2>
+                <h1>Web Development</h1>
             </div>
             <div className='cards' style={props.parallax.projectCards}>
+            <Link to="/liberty-mutual" style={{textDecoration: 'none'}}>
+            <ProjectCard 
+                    title='Liberty Mutual Insurance'
+                    disc='Software Development Intern'
+                    longDisc='Provided real company value by completing Jira stories every sprint, from developing new features, logging/sending analytics, or maintaining code.'
+                    start={'2022'} 
+                    end={''} 
+                    link={''}
+                    image={'liberty.jpeg'} 
+                />
+            </Link>
             <ProjectCard 
                     title='COVID-19 Exam Management'
                     start={'2022'} 

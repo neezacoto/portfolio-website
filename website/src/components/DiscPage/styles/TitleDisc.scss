@@ -1,0 +1,32 @@
+.title-disc {
+    
+    .item-list {
+        pointer-events: none;
+        font-size: 1.2rem;
+        color:#7D7D7D;
+        padding-left: .5rem;
+        margin-left: 2.2rem;
+        max-width: 500px;
+        &.spacing {
+            margin-top: 1rem;
+        }
+    }
+    margin-right: -4rem;
+    h2{
+        color: #7D7D7D;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    h1 {
+        overflow: visible;
+        margin-top: -.7rem;
+        font-size: 2.5rem;
+        padding-left: .4rem;
+    }
+    p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        padding-left: .7rem;
+        max-width: 31rem;
+    }
+}
