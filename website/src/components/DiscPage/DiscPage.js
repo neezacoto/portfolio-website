@@ -24,6 +24,8 @@ function DiscPage (props) {
             />
             <div class="disc-body">
                 <InfoSection 
+                    jobType={props.jobType}
+                    jobTitle={props.jobTitle}
                     manager={props.manager}
                     location={props.location}
                     date={props.date}

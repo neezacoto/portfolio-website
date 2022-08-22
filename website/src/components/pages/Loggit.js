@@ -3,6 +3,9 @@ import DiscPage from "../DiscPage/DiscPage";
 function Loggit () {
     return (
         <DiscPage
+             jobType="CompSci Class"
+             jobTitle="Website Development"
+             
              bannerImg="loggitbanner.png"
              websiteLink="https://www.youtube.com/watch?v=tSqRuyeU3XU"
              linkName="Presentation"

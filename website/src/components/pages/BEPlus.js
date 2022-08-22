@@ -3,6 +3,9 @@ import DiscPage from "../DiscPage/DiscPage";
 function BEPlus () {
     return (
         <DiscPage
+             jobType="Internship"
+             jobTitle="Operations Team Member"
+
              bannerImg="beplusbanner.png"
              websiteLink="https://builtenvironmentplus.org/"
              linkName="Website"

@@ -3,6 +3,9 @@ import DiscPage from "../DiscPage/DiscPage";
 function Monkeytype () {
     return (
         <DiscPage
+             jobType="Monkeytype"
+             jobTitle="Open Source Contributor"
+
              bannerImg="monkeybanner.png"
              websiteLink="https://monkeytype.com/"
              linkName="Website"

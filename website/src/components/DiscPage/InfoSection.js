@@ -10,9 +10,8 @@ function InfoSection (props) {
             <div class="title-disc-container">
                 <TitleDisc 
                     class="info-title"
-                    category="Internship"
-                    title="GRM Digital & Direct 
-                    Software Developer"
+                    category={props.jobType}
+                    title={props.jobTitle}
                     styles={{maxWidth: "30rem"}}
                 />
                 <div class="divider"/>

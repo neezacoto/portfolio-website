@@ -3,6 +3,10 @@ import DiscPage from "../DiscPage/DiscPage";
 function CovidApp () {
     return (
         <DiscPage
+
+             jobType="Apprenticeship"
+             jobTitle="Hack.Diversity Fellow"
+
              bannerImg="covid-app-screen.png"
              websiteLink="https://github.com/diabaatwit/2022-Covid19-Mini-Project"
              linkName="Repository"

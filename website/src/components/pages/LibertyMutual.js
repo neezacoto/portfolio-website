@@ -3,6 +3,10 @@ import DiscPage from "../DiscPage/DiscPage";
 function LibertyMutual () {
     return (
         <DiscPage
+        
+             jobType="Internship"
+             jobTitle="GRM Digital & Direct Software Developer"
+
              bannerImg="libertybanner.png"
              websiteLink="https://www.libertymutual.com/"
              linkName="Website"
