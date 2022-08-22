@@ -31,5 +31,28 @@
             }
         }
     }
+
+    @media (max-width: 800px) {
+        display: grid;
+        .info-text:first-child {
+            margin-top: 1.4rem;
+        }
+        .divider {
+            height: 2px;
+            width: 7.5em;
+            border-radius: 2px;
+            background-color: #7D7D7D;
+        }
+        .info-text {
+            .info-icon {
+                font-size: 2rem !important;
+            }
+            p {
+                color: #7D7D7D;
+                font-weight: 500;
+                font-size: 1.3rem !important;
+            }
+        }
+    }
    
 }

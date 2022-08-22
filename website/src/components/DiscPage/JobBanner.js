@@ -21,7 +21,7 @@ function JobBanner (props) {
                     rel="noopener noreferrer"
                     class="website-link"
                 >
-                    <span> Website </span> 
+                    <span> {props.linkName} </span> 
                     <BiChevronRight className='web-arrow'/>
                 </a>
             </div>
