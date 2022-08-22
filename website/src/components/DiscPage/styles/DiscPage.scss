@@ -1,0 +1,26 @@
+.section-div {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 1px;
+    background-color: #7D7D7D;
+    margin-bottom: 4em;
+}
+.summary-container {
+    display: grid;
+    gap: .5rem;
+
+    padding-left: 6rem;
+    grid-template-columns: 3fr 2fr;
+    grid-row-gap: 3rem;
+
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+    }
+}
+

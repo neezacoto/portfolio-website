@@ -31,13 +31,10 @@ function ContactSection(props) {
                         <a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
                             <SiTwitter />
                         </a>
-                        <a href="https://www.facebook.com/christian.rudder.56" target="_blank" rel="noopener noreferrer">
-                            <SiFacebook />
-                        </a>
                         <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
                             <SiGithub />
                         </a>
-                        <a href="https://www.instagram.com/mizacoto/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/neezacoto/" target="_blank" rel="noopener noreferrer">
                             <SiInstagram />
                         </a>
                         

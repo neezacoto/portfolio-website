@@ -16,7 +16,7 @@ function IntroSection(props) {
                 <div className='quote'>
                     
                     <p>-<br/>
-                        Hello, I’m an aspiring front-end software engineer. 
+                        Hello, I’m a Fullstack Software Engineer. 
                         My passion is to bring creative tools and ideas 
                         to life 
                         <span role="img" aria-label="sheep">🕊️</span>

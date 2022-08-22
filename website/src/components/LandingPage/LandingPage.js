@@ -4,8 +4,6 @@ import NavBar from './NavBar'
 import IntroSection from './IntroSection'
 import ProjectSection from './ProjectSection'
 import PersonalSection from './PersonalSection'
-import ContactSection from './ContactSection'
-import Footer from './Footer'
 
 function LandingPage() {
 
@@ -66,12 +64,6 @@ function LandingPage() {
             transform: `translateY(${ (window.pageYOffset < 1100)? offsetY * .8 : 0 }px)`,
             transition: 'transform 1000ms',
         }
-
-
-        
-
-
-
     }
 
   return (
@@ -81,8 +73,6 @@ function LandingPage() {
         <IntroSection parallax={parallax} />
         <ProjectSection parallax={parallax} />
         <PersonalSection parallax={parallax} />
-        <ContactSection parallax={parallax} />
-        <Footer />
     </div>
   )
 }

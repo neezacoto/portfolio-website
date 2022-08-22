@@ -5,9 +5,9 @@ import { BiChevronRight } from 'react-icons/bi';
 function ProjectCard(props) {
   const [isHovering, setIsHovering] = useState(false);
 
-
+  
   return (
-        
+    
       <div className='card-container' onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
         <a href={props.link} target="_blank" rel="noopener noreferrer">
         <div className='showcase-cover' />
