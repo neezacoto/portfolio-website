@@ -12,7 +12,7 @@ function JobBanner (props) {
                    
                 </Link>     
                 <div class="banner">
-                   <img src={props.bannerImg}/>
+                   <img src={props.bannerImg} alt="dis-banner"/>
                 </div>
                 <div class="fade"/>
                 <a 

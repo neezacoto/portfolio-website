@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiLinkedin, SiTwitter, SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
+import { SiLinkedin, SiTwitter, SiGithub, SiInstagram } from 'react-icons/si'
 import './styles/LandingPage.scss'
 
 function ContactSection(props) {
