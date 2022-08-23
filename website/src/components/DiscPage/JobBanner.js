@@ -11,7 +11,7 @@ function JobBanner (props) {
                 <Link class="back-container" to="/" onClick={projectReturn}>
                    
                     <BiChevronRight className='arrow'/>
-                    <span> Go Back Home </span>
+                    <span> Go Back</span>
                    
                 </Link>     
                 <div class="banner">

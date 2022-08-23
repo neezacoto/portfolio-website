@@ -7,7 +7,7 @@ function TitleDisc (props) {
             <h1>{props.title}</h1>
             
             
-            {console.log(props.list)}
+            
             {
             props.list?.length?
             <ui>

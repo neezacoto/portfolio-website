@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import './styles/LandingPage.scss'
 
 function ProjectSection(props) {
+    const doc = document.documentElement;
+
+
+    const saveMySpot = () => {
+        props.setMySpot((window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0))
+    }
+
   return (
     <section id="portfolio" >
             <div className='title' style={props.parallax.projectSectionTitle}>
@@ -11,7 +18,7 @@ function ProjectSection(props) {
                 <h1>Web Development</h1>
             </div>
             <div className='cards' style={props.parallax.projectCards}>
-            <Link to="/liberty-mutual" style={{ textDecoration: 'none' }}>
+            <Link to="/liberty-mutual" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
             <ProjectCard 
                     title='Liberty Mutual Insurance'
                     disc='Software Development Intern'
@@ -20,9 +27,10 @@ function ProjectSection(props) {
                     end={''} 
                     link={''}
                     image={'liberty.jpeg'} 
+                    
                 />
             </Link>
-            <Link to="/monkeytype" style={{ textDecoration: 'none' }}>
+            <Link to="/monkeytype" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
                 <ProjectCard 
                     title='Monkeytype!'
                     disc='Open Source Contributions'
@@ -33,7 +41,7 @@ function ProjectSection(props) {
                     image={'monkeytypecard.png'} 
                 />
             </Link>
-            <Link to="/covid-app" style={{ textDecoration: 'none' }}>
+            <Link to="/covid-app" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
             <ProjectCard 
                     title='COVID-19 Exam Management'
                     start={'2022'} 
@@ -44,7 +52,7 @@ function ProjectSection(props) {
                     image={'https://cdn.discordapp.com/attachments/857973303880187916/954980557400440872/ea.png'} 
                 />
             </Link>
-            <Link to="/built-environment-plus" style={{ textDecoration: 'none' }}>
+            <Link to="/built-environment-plus" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
             <ProjectCard 
                     title='Built Environment Plus'
                     disc='redesign & course-catalogue'
@@ -55,7 +63,7 @@ function ProjectSection(props) {
                     image={'https://cdn.discordapp.com/attachments/857973303880187916/954931458726834226/yes.png'} 
                 />
             </Link>
-            <Link to="/loggit" style={{ textDecoration: 'none' }}>
+            <Link to="/loggit" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
                 <ProjectCard 
                     title='Loggit!'
                     disc='discord bot/website'

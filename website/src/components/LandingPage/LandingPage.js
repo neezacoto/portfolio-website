@@ -5,9 +5,16 @@ import IntroSection from './IntroSection'
 import ProjectSection from './ProjectSection'
 import PersonalSection from './PersonalSection'
 
-function LandingPage() {
-
-    
+function LandingPage(props) {
+    useEffect(() => {
+        window.scrollTo(
+            {
+                top:props.mySpot,
+                left:0,
+                behavior: 'smooth'
+            }
+        )
+      }, [])
     const [offsetY,setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -71,7 +78,7 @@ function LandingPage() {
     <div id='page-container'> 
         <NavBar />
         <IntroSection parallax={parallax} />
-        <ProjectSection parallax={parallax} />
+        <ProjectSection mySpot={props.mySpot} setMySpot={props.setMySpot} parallax={parallax} />
         <PersonalSection parallax={parallax} />
     </div>
   )

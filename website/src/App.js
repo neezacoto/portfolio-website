@@ -8,13 +8,15 @@ import CovidApp from './components/pages/CovidApp';
 import BEPlus from './components/pages/BEPlus';
 import Loggit from './components/pages/Loggit';
 import Monkeytype from  './components/pages/Monkeytype';
+import { useState } from 'react';
 
 function App() {
+  const [mySpot, setMySpot] = useState(0)
   return (
     <>
       <Router>
         <Routes>
-          <Route path="*" element = {<><LandingPage /><ContactSection /></>} />
+          <Route path="*" element = {<><LandingPage mySpot={mySpot} setMySpot={setMySpot}/><ContactSection /></>} />
           <Route path="/liberty-mutual" element = { <LibertyMutual/> } />
           <Route path="/covid-app" element = { <CovidApp/> } />
           <Route path="/built-environment-plus" element = { <BEPlus/> } />
