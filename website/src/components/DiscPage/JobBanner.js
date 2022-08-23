@@ -2,10 +2,13 @@ import {BiChevronRight} from 'react-icons/bi'
 import { Link } from 'react-router-dom';
 import './styles/JobBanner.scss'
 function JobBanner (props) {
+    let projectReturn = () => {
+        window.scrollTo({top: 700, left: 0, behavior: 'smooth'});
+    }
     return (
         <>
             <div class="banner-container">
-                <Link class="back-container" to="/">
+                <Link class="back-container" to="/" onClick={projectReturn}>
                    
                     <BiChevronRight className='arrow'/>
                     <span> Go Back Home </span>
