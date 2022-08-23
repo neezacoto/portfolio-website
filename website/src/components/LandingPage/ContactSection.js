@@ -1,53 +1,54 @@
-import React from 'react'
-import { SiLinkedin, SiTwitter, SiGithub, SiInstagram } from 'react-icons/si'
-import './styles/LandingPage.scss'
+import './styles/LandingPage.scss';
+import { SiGithub, SiInstagram, SiLinkedin, SiTwitter } from 'react-icons/si';
+import React from 'react';
 
-function ContactSection(props) {
-  return (
-    <section id="contact"  >
-        <div id="parallax-container"  >
-            <div className='title'>
-                <h2>-Contact Info {'&'} Social Media</h2>
-                <h1>Let's Get In Touch</h1>
-            </div>
+
+function ContactSection() {
+	return (
+		<section id="contact"  >
+			<div id="parallax-container"  >
+				<div className='title'>
+					<h2>-Contact Info {'&'} Social Media</h2>
+					<h1>Let's Get In Touch</h1>
+				</div>
             
-            <div className='social-container'>
-                <div className='social email'>
-                    <p className='social-title'>
+				<div className='social-container'>
+					<div className='social email'>
+						<p className='social-title'>
                         Email:
-                    </p>
-                    <a href="mailto:RingTheBellPepper@gmail.com">RingTheBellPepper@gmail.com</a>
+						</p>
+						<a href="mailto:RingTheBellPepper@gmail.com">RingTheBellPepper@gmail.com</a>
                     
 
-                </div>
-                <div className='social'>
-                    <p className='social-title'>
+					</div>
+					<div className='social'>
+						<p className='social-title'>
                         Socials:
-                    </p>
-                    <div className='social-links'>
-                        <a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
-                            <SiLinkedin />
-                        </a>
-                        <a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
-                            <SiTwitter />
-                        </a>
-                        <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
-                            <SiGithub />
-                        </a>
-                        <a href="https://www.instagram.com/neezacoto/" target="_blank" rel="noopener noreferrer">
-                            <SiInstagram />
-                        </a>
+						</p>
+						<div className='social-links'>
+							<a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
+								<SiLinkedin />
+							</a>
+							<a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
+								<SiTwitter />
+							</a>
+							<a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
+								<SiGithub />
+							</a>
+							<a href="https://www.instagram.com/neezacoto/" target="_blank" rel="noopener noreferrer">
+								<SiInstagram />
+							</a>
                         
                         
                         
                         
-                    </div>
+						</div>
 
-                </div>
-            </div>
-        </div>
-        </section>
-  )
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
 
-export default ContactSection
+export default ContactSection;
