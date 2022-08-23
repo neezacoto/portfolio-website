@@ -18,6 +18,7 @@ function JobBanner (props) {
                    <img src={props.bannerImg} alt="dis-banner"/>
                 </div>
                 <div class="fade"/>
+                <div class="dark-fade" />
                 <a 
                     href={props.websiteLink} 
                     target="_blank" 

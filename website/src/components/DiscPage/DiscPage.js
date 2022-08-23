@@ -4,6 +4,7 @@ import TitleDisc from './TitleDisc'
 import InfoSection from './InfoSection'
 import ContactSection from '../LandingPage/ContactSection'
 import './styles/DiscPage.scss'
+import ScrollUpButton from '../ScrollUpButton'
 
 function DiscPage (props) {
     useEffect(() => {
@@ -17,6 +18,7 @@ function DiscPage (props) {
       }, [])
     return (
         <div id="disc-page">
+            <ScrollUpButton />
             <JobBanner 
             bannerImg={props.bannerImg}
             websiteLink={props.websiteLink}
