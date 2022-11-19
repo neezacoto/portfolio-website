@@ -24,17 +24,17 @@ function ContactSection() {
 					<div className='social'>
 						<p className='social-title'>
                         Socials:
-                    </p>
-                    <div className='social-links'>
-                        <a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
-                            <SiLinkedin />
-                        </a>
-                        <a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
-                            <SiTwitter />
-                        </a>
-                        <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
-                            <SiGithub />
-                        </a>
+						</p>
+						<div className='social-links'>
+							<a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
+								<SiLinkedin />
+							</a>
+							<a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
+								<SiTwitter />
+							</a>
+							<a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
+								<SiGithub />
+							</a>
       
                         
                         
