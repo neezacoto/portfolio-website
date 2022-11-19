@@ -1,6 +1,6 @@
-import './styles/LandingPage.scss';
-import { SiGithub, SiInstagram, SiLinkedin, SiTwitter } from 'react-icons/si';
-import React from 'react';
+import React from 'react'
+import { SiLinkedin, SiTwitter, SiGithub } from 'react-icons/si'
+import './styles/LandingPage.scss'
 
 
 function ContactSection() {
@@ -24,21 +24,18 @@ function ContactSection() {
 					<div className='social'>
 						<p className='social-title'>
                         Socials:
-						</p>
-						<div className='social-links'>
-							<a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
-								<SiLinkedin />
-							</a>
-							<a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
-								<SiTwitter />
-							</a>
-							<a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
-								<SiGithub />
-							</a>
-							<a href="https://www.instagram.com/neezacoto/" target="_blank" rel="noopener noreferrer">
-								<SiInstagram />
-							</a>
-                        
+                    </p>
+                    <div className='social-links'>
+                        <a href="https://www.linkedin.com/in/crudder-ma/" target="_blank" rel="noopener noreferrer">
+                            <SiLinkedin />
+                        </a>
+                        <a href="https://twitter.com/crubber_" target="_blank" rel="noopener noreferrer">
+                            <SiTwitter />
+                        </a>
+                        <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
+                            <SiGithub />
+                        </a>
+      
                         
                         
                         
