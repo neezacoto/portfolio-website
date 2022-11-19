@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiLinkedin, SiTwitter, SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
+import { SiLinkedin, SiTwitter, SiFacebook, SiGithub } from 'react-icons/si'
 import './styles/LandingPage.scss'
 
 function ContactSection(props) {
@@ -33,9 +33,6 @@ function ContactSection(props) {
                         </a>
                         <a href="https://github.com/neezacoto" target="_blank" rel="noopener noreferrer">
                             <SiGithub />
-                        </a>
-                        <a href="https://www.instagram.com/neezacoto/" target="_blank" rel="noopener noreferrer">
-                            <SiInstagram />
                         </a>
                         
                         

@@ -11,6 +11,17 @@ function ProjectSection(props) {
                 <h1>Web Development</h1>
             </div>
             <div className='cards' style={props.parallax.projectCards}>
+            <Link to="/adi-ai-app" style={{ textDecoration: 'none' }}>
+            <ProjectCard 
+                    title='Adi'
+                    disc='AI id generator app'
+                    longDisc='BostanHacks22 General Hack Award: Adi- an AI ad generator (IOS/Android).'
+                    start={'2022'} 
+                    end={''} 
+                    link={''}
+                    image={'adicard.png'} 
+                />
+            </Link>
             <Link to="/liberty-mutual" style={{ textDecoration: 'none' }}>
             <ProjectCard 
                     title='Liberty Mutual Insurance'

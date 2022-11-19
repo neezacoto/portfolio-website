@@ -8,6 +8,7 @@ import CovidApp from './components/pages/CovidApp';
 import BEPlus from './components/pages/BEPlus';
 import Loggit from './components/pages/Loggit';
 import Monkeytype from  './components/pages/Monkeytype';
+import AdiAI from './components/pages/AdiAI';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="*" element = {<><LandingPage /><ContactSection /></>} />
           <Route path="/liberty-mutual" element = { <LibertyMutual/> } />
+          <Route path="/adi-ai-app" element = { <AdiAI/> } />
           <Route path="/covid-app" element = { <CovidApp/> } />
           <Route path="/built-environment-plus" element = { <BEPlus/> } />
           <Route path="/loggit" element = { <Loggit/> } />

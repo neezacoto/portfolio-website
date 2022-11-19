@@ -8,7 +8,7 @@ function IntroSection(props) {
 
             
                 <div className='face-card' style={props.parallax.faceCard}>
-                    <img src='https://cdn.discordapp.com/attachments/872995677876154429/921591553460404294/650A3780-E18D-4FFB-AB35-47FBBD8702B4.jpg' alt="hello"/>
+                    <img src='me.jpg' alt="hello"/>
                 </div>
             
             <div className='intro-text' style={props.parallax.introBio}>
