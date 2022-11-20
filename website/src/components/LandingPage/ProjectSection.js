@@ -21,7 +21,7 @@ function ProjectSection(props) {
 				<Link to="/adi-ai-app" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='Adi'
-						disc='AI id generator app'
+						disc='AI ad generator app'
 						longDisc='BostanHacks22 General Hack Award: Adi- an AI ad generator (IOS/Android).'
 						start={'2022'} 
 						end={''} 
