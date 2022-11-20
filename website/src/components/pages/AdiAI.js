@@ -4,7 +4,7 @@ function AdiAI () {
 	return (
         
 		<DiscPage
-            jobType="Hackathon"
+            jobType="Hackathon (Winner)"
             jobTitle="Competitor"
 
 			bannerImg="adibanner.png"
