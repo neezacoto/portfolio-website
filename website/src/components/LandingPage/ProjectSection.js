@@ -18,6 +18,17 @@ function ProjectSection(props) {
 				<h1>Web Development</h1>
 			</div>
 			<div className='cards' style={props.parallax.projectCards}>
+				<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
+					<ProjectCard 
+						title='YT-Focus'
+						disc='Productivity Chrome Extension'
+						longDisc='A chrome extension that removes all the distractions from YouTube.'
+						start={'2023'} 
+						end={''} 
+						link={''}
+						image={'yt-focus-card.png'} 
+					/>
+				</Link>
 				<Link to="/adi-ai-app" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='Adi'

@@ -10,6 +10,7 @@ import Loggit from './components/pages/Loggit';
 import Monkeytype from  './components/pages/Monkeytype';
 import AdiAI from './components/pages/AdiAI';
 import { useState } from 'react';
+import YTFocus from './components/pages/YTFocus';
 
 function App() {
 	const [mySpot, setMySpot] = useState(0);
@@ -18,6 +19,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="*" element = {<><LandingPage mySpot={mySpot} setMySpot={setMySpot}/><ContactSection /></>} />
+					<Route path="/yt-focus" element = { <YTFocus/> } />
 					<Route path="/liberty-mutual" element = { <LibertyMutual/> } />
           <Route path="/adi-ai-app" element = { <AdiAI/> } />
 					<Route path="/covid-app" element = { <CovidApp/> } />

@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import JobBanner from './JobBanner';
 import TitleDisc from './TitleDisc';
 import InfoSection from './InfoSection';
