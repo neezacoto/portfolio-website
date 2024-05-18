@@ -1,64 +1,76 @@
-
-
 .aboutme-page-container {
     padding-top: 4rem;
-    width: 60vw;
-    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-holder {
+        width: 60%;
+    }
+
     .aboutme-container {
         display: grid;
         grid-template-rows: 141px 360px auto;
-        grid-template-columns: 1fr 1fr minmax(300px, 1fr) minmax(240px,1fr);
-        & > div {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 24px;
-        }
+        grid-template-columns: 1fr 1fr minmax(200px, 1fr) minmax(240px, 1fr);
     }
+
     .goback-container {
         background-color: #272727;
         color: white;
         text-decoration: none;
         display: flex;
         align-items: center;
-        padding-left: 2.4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         border-radius: 24px;
         font-size: 2rem;
         font-weight: 500;
+
         .arrow {
+            font-size: 3rem;
             transform: rotate(180deg);
+            min-width: 30px;
+            margin-right: -.5rem;
         }
+
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 24px;
+        border-radius: 24px;
 
         grid-row: 1/1;
         grid-column: 1/4;
         margin-right: 2rem;
 
         transition: background-color 250ms;
+
         &:hover {
             background-color: #353535;
         }
     }
-    
+
     .greeting-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         padding-left: 2rem;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
     }
+
     .greeting-title {
         color: #D2D2D2;
         font-size: 1.2rem;
-        
     }
+
     .greeting-text {
         color: black;
         font-size: 2.4rem;
         font-weight: bold;
         margin-top: -.4rem;
     }
+
     .image-container {
-        background-color: blue;
         grid-row: 2/3;
         grid-column: 1/-1;
         margin-top: 1rem;
@@ -66,26 +78,30 @@ border-radius: 24px;
         justify-content: center;
         align-items: center;
         overflow: hidden; /* Ensures content does not overflow */
-    
+        border-radius: 24px;
+        background-color: transparent; /* Remove background color */
+
         img.image {
             width: 100%;
-            height: auto;
-            object-fit: contain; /* Adjusts the fit to ensure the entire image is visible */
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container */
             object-position: left center; /* Starts covering from the left */
             border-radius: 24px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
-    
-    
-    
+
     .biography-container {
-        margin-top: 4rem;
+        margin-top: 2rem;
         padding: 0rem 3rem 3rem 3rem;
         grid-row: 3/-1;
         grid-column: 1/-1;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
     }
+
     .biography-text {
         margin-bottom: 1rem; /* Adjust spacing between paragraphs */
         line-height: 1.6; /* Adjust line height for readability */
@@ -96,9 +112,10 @@ border-radius: 24px;
     }
 
     .next {
+        margin-top: 1rem;
         font-size: 2rem;
     }
-    
+
     .lil-quote {
         color: #C8C8C8;
         font-size: 2rem;
@@ -107,12 +124,49 @@ border-radius: 24px;
         align-self: center;
         margin-bottom: 1rem;
     }
-    
+
     .timestamp {
         color: #DBDBDB;
         font-size: 1rem;
         margin-top: 1rem;
         margin-bottom: 6rem;
+    }
 
+    /* Media Query for Mobile View */
+    @media (max-width: 700px) {
+        .aboutme-container {
+            grid-template-columns: 1fr 1fr; /* Single column layout */
+            grid-template-rows: 100px auto; /* Adjust rows to auto height */
+        }
+
+        .greeting-text {
+            font-size: 1.6rem;
+            text-wrap: nowrap;
+        }
+        .goback-container {
+            grid-row: 1/1;
+            grid-column: 1 / 1; /* Span entire width */
+            margin-right: .6rem; /* Remove right margin */
+        }
+        .greeting-container {
+            grid-row: 1/1;
+            grid-column: 2 / 2; /* Span entire width */
+            margin-right: 0; /* Remove right margin */
+        }
+        .image-container{
+            grid-row: 3/3;
+grid-column: 1 / -1; /* Span entire width */
+            margin-right: 0; /* Remove right margin */
+        }
+        .biography-container {
+            grid-row: 4/4;
+            grid-column: 1 / -1; /* Span entire width */
+            margin-right: 0; /* Remove right margin */
+        }
+
+
+        .content-holder {
+            width: 90%; /* Adjust width for smaller screens */
+        }
     }
 }

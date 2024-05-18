@@ -32,11 +32,13 @@ function About() {
     const paragraphs = biographyText.trim().split('\n\n');
 
     return (
+        <>
         <div className='aboutme-page-container'>
+            <div className='content-holder'>
             <div className='aboutme-container'>
                 <Link className="goback-container" to="/">
                     <BiChevronRight className='arrow' />
-                    <span> Go Back</span>
+                    <span>Back</span>
                 </Link>
                 <div className='greeting-container'>
                     <div className='greeting-title'>
@@ -63,8 +65,10 @@ function About() {
                 </div>
             </div>
             <p className='timestamp'>- last updated 5/18/2024</p>
-            <ContactSection />
+            </div>
         </div>
+        <ContactSection />
+        </>
     );
 }
 
