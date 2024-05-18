@@ -11,6 +11,7 @@ import Monkeytype from  './components/pages/Monkeytype';
 import AdiAI from './components/pages/AdiAI';
 import { useState } from 'react';
 import YTFocus from './components/pages/YTFocus';
+import KatApp from './components/pages/KatApp';
 
 function App() {
 	const [mySpot, setMySpot] = useState(0);
@@ -26,6 +27,7 @@ function App() {
 					<Route path="/built-environment-plus" element = { <BEPlus/> } />
 					<Route path="/loggit" element = { <Loggit/> } />
 					<Route path="/monkeytype" element = { <Monkeytype/> } />
+					<Route path="/katapp" element = { <KatApp/> } />
 				</Routes>
 			</Router> 
 			<Footer />

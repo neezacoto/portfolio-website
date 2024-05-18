@@ -41,7 +41,7 @@ function ProjectSection(props) {
 						image={'hadacard.png'} 
 					/>
 				</Link>
-			<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
+			<Link to="/katapp" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='KatApp'
 						disc='Ai Veterinary Assistant'
