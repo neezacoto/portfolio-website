@@ -12,7 +12,7 @@ function LibertyMutual () {
 			linkName="Website"
 			manager="Manager: Lin Huang"
 			location="Boston, MA"
-			date="Jun 2022 - Aug 2022"
+			date="Jun 2022 - Aug 2024"
 
 			summaryCategory="Summary"
 			summaryTitle="Job Experience"
