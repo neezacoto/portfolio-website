@@ -18,6 +18,28 @@ function ProjectSection(props) {
 				<h1>Web Development</h1>
 			</div>
 			<div className='cards' style={props.parallax.projectCards}>
+			<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
+					<ProjectCard 
+						title='Hada'
+						disc='Language Learning Made Fun'
+						longDisc='Hada is design problem endeavour to revamp the UX of flashcards with a spaced-repetition algorithm and fresh UI'
+						start={'2024'} 
+						end={''} 
+						link={''}
+						image={'hadacard.png'} 
+					/>
+				</Link>
+			<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
+					<ProjectCard 
+						title='KatApp'
+						disc='Ai Veterinary Assistant'
+						longDisc='Use Ai to scan cat food, get the best sellers, and manage cat info.'
+						start={'2024'} 
+						end={''} 
+						link={''}
+						image={'katappcard.png'} 
+					/>
+				</Link>
 				<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='YT-Focus'
@@ -71,7 +93,7 @@ function ProjectSection(props) {
 						disc={'MERN stack web app '}
 						longDisc={'Utilizing a real dataset of COVID-19 patients, a team and I worked on creating an app that allowed for the easy manipulation & reading of records.'}
 						link={''}
-						image={'https://cdn.discordapp.com/attachments/857973303880187916/954980557400440872/ea.png'} 
+						image={'covidapp.png'} 
 					/>
 				</Link>
 				<Link to="/built-environment-plus" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
@@ -82,7 +104,7 @@ function ProjectSection(props) {
 						start={'2021'} 
 						end={''} 
 						link={''}
-						image={'https://cdn.discordapp.com/attachments/857973303880187916/954931458726834226/yes.png'} 
+						image={'beplus.png'} 
 					/>
 				</Link>
 				<Link to="/loggit" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
@@ -93,7 +115,7 @@ function ProjectSection(props) {
 						start={'2020'} 
 						end={''} 
 						link={''}
-						image={'https://cdn.discordapp.com/attachments/857973303880187916/954951292051144704/no.png'} 
+						image={'loggit.png'} 
 					/>
 				</Link>
                 
