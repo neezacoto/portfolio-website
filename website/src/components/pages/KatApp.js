@@ -5,12 +5,12 @@ function KatApp () {
 		<DiscPage
         
 			jobType="App Development"
-			jobTitle="Product Management & Development"
+			jobTitle="Product Owner & Development"
 
 			bannerImg="kattappbanner.png"
 			websiteLink="https://github.com/neezacoto/KatApp/tree/main"
 			linkName="Repository"
-			manager="Shereif El-Sheikh"
+			manager="Lec: Shereif El-Sheikh"
 			location="Boston University CS392"
 			date="Jan 2024 - May 2024"
 

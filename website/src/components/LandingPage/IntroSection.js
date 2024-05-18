@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/LandingPage.scss';
 import { BiChevronRight } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 function IntroSection(props) {
 	return (
@@ -24,9 +25,8 @@ function IntroSection(props) {
 						<span role="img" aria-label="sheep">🕊️</span>
 					</p>
 				</div>
-				<a href='https://medium.com/hack-diversity-movement/cohort-stories-meet-christian-1c385ebde885'
-					target='_blank'
-					rel="noopener noreferrer"
+				<Link
+					to="about"
 					className='link-learn'
 				>
                     
@@ -35,7 +35,7 @@ function IntroSection(props) {
                         
                         
                     
-				</a>
+				</Link>
 			</div>
 
 		</section>

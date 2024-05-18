@@ -1,0 +1,118 @@
+
+
+.aboutme-page-container {
+    padding-top: 4rem;
+    width: 60vw;
+    
+    .aboutme-container {
+        display: grid;
+        grid-template-rows: 141px 360px auto;
+        grid-template-columns: 1fr 1fr minmax(300px, 1fr) minmax(240px,1fr);
+        & > div {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+        }
+    }
+    .goback-container {
+        background-color: #272727;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-left: 2.4rem;
+        border-radius: 24px;
+        font-size: 2rem;
+        font-weight: 500;
+        .arrow {
+            transform: rotate(180deg);
+        }
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+
+        grid-row: 1/1;
+        grid-column: 1/4;
+        margin-right: 2rem;
+
+        transition: background-color 250ms;
+        &:hover {
+            background-color: #353535;
+        }
+    }
+    
+    .greeting-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+    .greeting-title {
+        color: #D2D2D2;
+        font-size: 1.2rem;
+        
+    }
+    .greeting-text {
+        color: black;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-top: -.4rem;
+    }
+    .image-container {
+        background-color: blue;
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Ensures content does not overflow */
+    
+        img.image {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Adjusts the fit to ensure the entire image is visible */
+            object-position: left center; /* Starts covering from the left */
+            border-radius: 24px;
+        }
+    }
+    
+    
+    
+    .biography-container {
+        margin-top: 4rem;
+        padding: 0rem 3rem 3rem 3rem;
+        grid-row: 3/-1;
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+    }
+    .biography-text {
+        margin-bottom: 1rem; /* Adjust spacing between paragraphs */
+        line-height: 1.6; /* Adjust line height for readability */
+        color: #1C1C1C;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+    }
+
+    .next {
+        font-size: 2rem;
+    }
+    
+    .lil-quote {
+        color: #C8C8C8;
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 300;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    
+    .timestamp {
+        color: #DBDBDB;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+
+    }
+}

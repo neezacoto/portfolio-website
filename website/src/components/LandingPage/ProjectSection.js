@@ -30,7 +30,7 @@ function ProjectSection(props) {
                     
 					/>
 				</Link>
-			<Link to="/yt-focus" style={{ textDecoration: 'none' }}>
+			<Link to="/hada" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='Hada'
 						disc='Language Learning Made Fun'

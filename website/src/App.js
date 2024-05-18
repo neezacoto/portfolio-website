@@ -12,6 +12,8 @@ import AdiAI from './components/pages/AdiAI';
 import { useState } from 'react';
 import YTFocus from './components/pages/YTFocus';
 import KatApp from './components/pages/KatApp';
+import Hada from './components/pages/Hada';
+import About from './components/pages/About';
 
 function App() {
 	const [mySpot, setMySpot] = useState(0);
@@ -28,6 +30,8 @@ function App() {
 					<Route path="/loggit" element = { <Loggit/> } />
 					<Route path="/monkeytype" element = { <Monkeytype/> } />
 					<Route path="/katapp" element = { <KatApp/> } />
+					<Route path="/hada" element = { <Hada/> } />
+					<Route path="/about" element = { <About/> } />
 				</Routes>
 			</Router> 
 			<Footer />

@@ -56,9 +56,9 @@ function PersonalSection(props) {
 							<p>
                                     To the left is my art & photography.<br></br>Off the books I rather love spending my time getting involved in hobby hunting or you'll find me taking in nature.<br/><br/>
 									Biking, running, Mixed-Calisthenics, Rock-climbing... Fitness & health is important to me.
-                                    I've gone from watercolors, to digital art, to photography. In my hobbies I would consider my self a jack of all trades knowing photo editing and video editing.<br/><br/>
-									I feel as though all these mishmash of skills help me thrive in any environment I'm placed in. I always figure out a way even when my back is against the wall; there is always a solution to be found.
-									And in quarrels and disputes a bridge to be made.<br></br> My approach to all problems include an array of visual elements and analogies, breaking things down into their smallest components to understand the whole.<br>
+                                    I've gone from watercolors, to digital art, to photography. In my hobbies I would consider myself all over the place, from video editing to crocheting.<br/><br/>
+									All these mishmash of skills have helped me thrive in any environment I've been thrown in. I always figure out a way even when my back is against the wall; there is always a solution to be found.
+									And in quarrels and disputes a bridge to be made.<br></br> I often find myself with interesting unorthodox solutions because of it, stemming from breaking things down into their smallest components back up.<br>
 									</br><br></br>That's why I stay by computer science, it gives my brain something good to chew on, and every problem solved a treat well deserved.
 							</p>
 							<div className='cover' />

@@ -315,8 +315,11 @@ but for the scope of this project it really doesn't matter */
             background: none !important;
         }
     }
-    .pointer[data-visible='true'] {
+    .pointer {
         transform: rotate(180deg) ;
+    }
+    .pointer[data-visible='true'] {
+        transform: rotate(0deg) ;
     }
     
     #life{
