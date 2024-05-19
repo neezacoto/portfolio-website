@@ -4,7 +4,7 @@ import ContactSection from '../LandingPage/ContactSection';
 import './styles/About.scss';
 import { BiChevronRight } from 'react-icons/bi';
 
-function About() {
+function About({setMySpot}) {
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -36,7 +36,7 @@ function About() {
         <div className='aboutme-page-container'>
             <div className='content-holder'>
             <div className='aboutme-container'>
-                <Link className="goback-container" to="/">
+                <Link onPress={()=> setMySpot(0)} className="goback-container" to="/">
                     <BiChevronRight className='arrow' />
                     <span>Back</span>
                 </Link>

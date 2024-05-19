@@ -31,12 +31,13 @@ function App() {
 					<Route path="/monkeytype" element = { <Monkeytype/> } />
 					<Route path="/katapp" element = { <KatApp/> } />
 					<Route path="/hada" element = { <Hada/> } />
-					<Route path="/about" element = { <About/> } />
+					<Route path="/about" element = { <About setMySpot={setMySpot}/> } />
 				</Routes>
 			</Router> 
 			<Footer />
 		</>
 	);
+	//really don't feel like setting up a context for this haha
 }
 
 export default App;
