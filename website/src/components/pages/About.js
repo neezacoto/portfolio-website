@@ -16,7 +16,7 @@ function About({setMySpot}) {
     const biographyText = `
     I grew up in South Boston as a first-gen child raised by my retired aunt and uncle. I was enrolled within METCO which allowed me to get an education in Belmont for K-12. During high school I would often have to wake up around 5am to make the transit commute for 8am. Though those were some challenging times, I enjoyed every bit of it.
 
-    I then graduated in 2020 going into MassBay Community College, where my spark for Computer Science really began, despite taking AP classes in high school. The resources there led me to many opportunities such as competing and securing an internship at Liberty Mutual.
+    I then graduated in 2020 going into MassBay Community College, where my spark for Computer Science really began, despite taking AP classes in high school.
 
     With a few projects under my belt, I transferred into Boston University in 2022. The transition was rough, but despite that I made my footing, becoming a Course Assistant (CA) for Introduction to Computer Science II (CS112). I went on to win Boston Hacks in my first hackathon and react native app in a team of 4. I went through interviews for the Spark program at our school which gave me my first Product Owner and Software Management experience.
 
