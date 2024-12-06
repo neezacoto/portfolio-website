@@ -14,19 +14,21 @@ function About({setMySpot}) {
     }, []);
 
     const biographyText = `
-    I grew up in South Boston as a first-gen child raised by my retired aunt and uncle. I was enrolled within METCO which allowed me to get an education in Belmont for K-12. During high school I would often have to wake up around 5am to make the transit commute for 8am. Though those were some challenging times, I enjoyed every bit of it.
+    Boston based, my interests started with website development. The ability to create any tool that came to mind inspired me. My first project involved creating a discord bot with a website companion that tracked hours studied amongst friends.
+    For some time that was my main interest. I had done visual arts and design as a hobby for years. Taking that skill and applying both the logic and art peaked by interest.
+    I would go on into industry and create web applications among other side projects.
 
-    I then graduated in 2020 going into MassBay Community College, where my spark for Computer Science really began, despite taking AP classes in high school.
+    I took multiple classes in Boston University which enabled me the role of Product Owner within an application. Not only working on the code itself, but requirements, specs, deliverables, sprints, and app design.
+    Notably my experience in the spark program offered me the opportunity to lead a team of 4 engineers and a designer, practicing agile methodologies.
 
-    With a few projects under my belt, I transferred into Boston University in 2022. The transition was rough, but despite that I made my footing, becoming a Course Assistant (CA) for Introduction to Computer Science II (CS112). I went on to win Boston Hacks in my first hackathon and react native app in a team of 4. I went through interviews for the Spark program at our school which gave me my first Product Owner and Software Management experience.
+    After taking higher-level Computer Science courses, math started to grow onto me. Particularly after having my whiplash math moment by none other than Leonid Levin himself.
+    At this time security and networking starting to peak my interest with the faculty and culture I was surrounded by. At this time I really gained a nack for LaTeX notes, and documented 
+    and design diagrams for my algorithms and security classes.
 
-    Beyond Computer Science, I’m an artist at heart: working with watercolors, digital art, graphic design, video editing, photo editing, photography, and poetry. It’s given me the freedom to jump into any project I need and bring a unique set of skills of versatility everywhere I go.
+    What more came to my interest, was not so much as how to create new things but, use existing technologies to improve the now. In another lense, how things can be reverse engineered, broken. That 
+    if there is a way, it will most definitely be found. This began my interest, and confidence to dive into the world of software security as a whole. 
 
-    I’m also a sucker for Fitness & Health. Nothing I love more than the great outdoors and balancing my academic pursuits with fitness journey. I desire to see nature and own many plants, I rock climb, partake in mixed-calisthenics, dance, gymnastics, and on and on.
-
-    My goal in life is to live life, in other words, Math, Science, Art, Literature, Mind, Body, and the connection with others and nature.
-
-    In all—I desire Humanity.
+    I very much am all about giving it my all. No matter what it is, 100% self is put forward. To shoot for the moon, and land among the stars.
 `;
 
     const paragraphs = biographyText.trim().split('\n\n');

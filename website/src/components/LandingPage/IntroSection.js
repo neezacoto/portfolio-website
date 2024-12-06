@@ -19,7 +19,7 @@ function IntroSection(props) {
 				<div className='quote'>
                     
 					<p>-<br/>
-                        Software Engineering, WebDev, Cyber-Sec, Networking, Visual Design. 
+                        Interests lie in Software Engineering, Cyber-Sec, Networking, and Visual Design. 
 						<span role="img" aria-label="sheep">🕊️</span>
 					</p>
 				</div>
