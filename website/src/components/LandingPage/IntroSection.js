@@ -10,7 +10,7 @@ function IntroSection(props) {
             
 
                 <div className='face-card' style={props.parallax.faceCard}>
-                    <img src='newpfp.png' alt="developer"/>
+                    <img height="100%" src='newpfp.jpeg' alt="developer"/>
                 </div>
 
             
@@ -19,7 +19,8 @@ function IntroSection(props) {
 				<div className='quote'>
                     
 					<p>-<br/>
-                        Interests lie in Software Engineering, Cyber-Sec, Networking, and Visual Design. 
+                        <strong>Interests:</strong> Imperative & Declarative Programming, Cyber-Sec, Networking, and Design. <br/>
+						<strong>Familiarities:</strong> Ind. Full-Stack Dev, Tech Ventures & Funding, Management & Coord., DB & Dist. Sys., Teaching, and more.
 						<span role="img" aria-label="sheep">🕊️</span>
 					</p>
 				</div>
