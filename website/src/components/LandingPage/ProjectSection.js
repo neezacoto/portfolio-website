@@ -24,12 +24,34 @@ function ProjectSection(props) {
 						disc='Software Development Intern'
 						longDisc='Provided real company value by completing Jira stories every sprint, from developing new features, logging/sending analytics, or maintaining code.'
 						start={'2022'} 
-						end={'2024'} 
+						end={'2025'} 
 						link={''}
 						image={'liberty.jpeg'} 
                     
 					/>
 				</Link>
+				<Link to="/concise" style={{ textDecoration: 'none' }}>
+					<ProjectCard 
+						title='Concise Works'
+						disc='Accessible Higher-Level CS'
+						longDisc='An effort to make higher-level computer science topics more accessible to students.'
+						start={'2024'} 
+						end={''} 
+						link={''}
+						image={'knowledge.png'} 
+					/>
+				</Link>
+				<Link to="/hada" style={{ textDecoration: 'none' }}>
+					<ProjectCard 
+						title='Hada'
+						disc='Language Learning Made Fun'
+						longDisc='Hada is design problem endeavour to revamp the UX of flashcards with a spaced-repetition algorithm and fresh UI'
+						start={'2024'} 
+						end={''} 
+						link={''}
+						image={'hadacard.png'} 
+					/>
+			</Link>
 			<Link to="/hada" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='Hada'
@@ -40,7 +62,7 @@ function ProjectSection(props) {
 						link={''}
 						image={'hadacard.png'} 
 					/>
-				</Link>
+			</Link>
 			<Link to="/katapp" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='KatApp'

@@ -21,14 +21,13 @@ function About({setMySpot}) {
     I took multiple classes in Boston University which enabled me the role of Product Owner within an application. Not only working on the code itself, but requirements, specs, deliverables, sprints, and app design.
     Notably my experience in the spark program offered me the opportunity to lead a team of 4 engineers and a designer, practicing agile methodologies.
 
-    After taking higher-level Computer Science courses, math started to grow onto me. Particularly after having my whiplash math moment by none other than Leonid Levin himself.
-    At this time security and networking starting to peak my interest with the faculty and culture I was surrounded by. At this time I really gained a nack for LaTeX notes, and documented 
-    and design diagrams for my algorithms and security classes.
+    After taking higher-level Computer Science courses, math started to grow on me. Particularly after having my whiplash math moment taking algebraic algorithms with Leonid Levin himself.
+    This class had nothing to do with coding and was a Number & Group Theory class in disguise.
+    At this same time security and networking starting to peak my interest with the faculty and culture I was surrounded by.
 
-    What more came to my interest, was not so much as how to create new things but, use existing technologies to improve the now. In another lense, how things can be reverse engineered, broken. That 
-    if there is a way, it will most definitely be found. This began my interest, and confidence to dive into the world of software security as a whole. 
-
-    I very much am all about giving it my all. No matter what it is, 100% self is put forward. To shoot for the moon, and land among the stars.
+    At this time I really gained a nack for LaTeX notes, and documented and design diagrams, notes, and illustrations for my classes. This turned into
+    Concise Works, an endeavor to make higher-level computer science topics more accessible to students. This would also be accompanied by a YouTube channel, where I would teach these topics.
+    Though all of such works are available for free on GitHub under the same name.
 `;
 
     const paragraphs = biographyText.trim().split('\n\n');
@@ -66,7 +65,7 @@ function About({setMySpot}) {
                     ))}
                 </div>
             </div>
-            <p className='timestamp'>- last updated 5/18/2024</p>
+            <p className='timestamp'>- last updated 3/13/2025</p>
             </div>
         </div>
         <ContactSection />

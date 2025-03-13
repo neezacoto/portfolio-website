@@ -13,6 +13,7 @@ import { useState } from 'react';
 import YTFocus from './components/pages/YTFocus';
 import KatApp from './components/pages/KatApp';
 import Hada from './components/pages/Hada';
+import Concise from './components/pages/Concise';
 import About from './components/pages/About';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/loggit" element = { <Loggit/> } />
 					<Route path="/monkeytype" element = { <Monkeytype/> } />
 					<Route path="/katapp" element = { <KatApp/> } />
+					<Route path="/concise" element = { <Concise/> } />
 					<Route path="/hada" element = { <Hada/> } />
 					<Route path="/about" element = { <About setMySpot={setMySpot}/> } />
 				</Routes>
