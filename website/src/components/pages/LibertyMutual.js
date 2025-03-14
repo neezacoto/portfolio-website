@@ -4,8 +4,8 @@ function LibertyMutual () {
 	return (
 		<DiscPage
         
-			jobType="Internship"
-			jobTitle="GRM Digital & Direct Software Developer"
+			jobType="Technology"
+			jobTitle="Software Developer"
 
 			bannerImg="libertybanner.png"
 			websiteLink="https://www.libertymutual.com/"
@@ -16,7 +16,7 @@ function LibertyMutual () {
 
 			summaryCategory="Summary"
 			summaryTitle="Job Experience"
-			summaryDisc="As a Software Engineer intern at Liberty Mutual I was treated as part of the team, attending scrum meetings to picking up Jira tickets, and producing code following the development life cycle all the way to production. I met so many incredibly kind and talented people during my time, and am grateful to have had such a wonderful experience!"
+			summaryDisc="As a Software Engineer at Liberty Mutual, attending scrum meetings to picking up Jira tickets, and producing code following the development life cycle all the way to production. I met so many incredibly kind and talented people during my time, and am grateful to have had such a wonderful experience!"
 
 			skillCategory="learned"
 			skillTitle="Skills:"

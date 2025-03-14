@@ -21,7 +21,7 @@ function ProjectSection(props) {
 			<Link to="/liberty-mutual" style={{ textDecoration: 'none' }} onClick={saveMySpot}>
 					<ProjectCard 
 						title='Liberty Mutual Insurance'
-						disc='Software Development Intern'
+						disc='Software Engineer'
 						longDisc='Provided real company value by completing Jira stories every sprint, from developing new features, logging/sending analytics, or maintaining code.'
 						start={'2022'} 
 						end={'2025'} 
