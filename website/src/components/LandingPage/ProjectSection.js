@@ -14,8 +14,8 @@ function ProjectSection(props) {
 	return (
 		<section id="portfolio" >
 			<div className='title' style={props.parallax.projectSectionTitle}>
-				<h2>- Experience</h2>
-				<h1>Web Development</h1>
+				<h2>- Software & Works</h2>
+				<h1>Portfolio</h1>
 			</div>
 			<div className='cards' style={props.parallax.projectCards}>
 			<Link to="/liberty-mutual" style={{ textDecoration: 'none' }} onClick={saveMySpot}>

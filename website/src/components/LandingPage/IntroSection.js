@@ -10,7 +10,7 @@ function IntroSection(props) {
             
 
                 <div className='face-card' style={props.parallax.faceCard}>
-                    <img height="100%" src='newpfp.jpeg' alt="developer"/>
+                    <img height="100%" src='newnewpfp.png' alt="developer"/>
                 </div>
 
             
