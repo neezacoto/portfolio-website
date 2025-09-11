@@ -57,9 +57,6 @@ function Hada () {
                 'Scrum', 
                 'Agile Methodologies'
             ]}
-            
-
-			
 		/>
 	);
 }

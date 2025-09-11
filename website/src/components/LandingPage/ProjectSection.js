@@ -52,17 +52,6 @@ function ProjectSection(props) {
 						image={'hadacard.png'} 
 					/>
 			</Link>
-			<Link to="/hada" style={{ textDecoration: 'none' }}>
-					<ProjectCard 
-						title='Hada'
-						disc='Language Learning Made Fun'
-						longDisc='Hada is design problem endeavour to revamp the UX of flashcards with a spaced-repetition algorithm and fresh UI'
-						start={'2024'} 
-						end={''} 
-						link={''}
-						image={'hadacard.png'} 
-					/>
-			</Link>
 			<Link to="/katapp" style={{ textDecoration: 'none' }}>
 					<ProjectCard 
 						title='KatApp'
