@@ -7,8 +7,8 @@ function Concise () {
             jobTitle="Author & Creator"
 
             bannerImg="concisebanner.png"
-            websiteLink="https://github.com/orgs/Concise-Works/repositories"
-            linkName="Repositories"
+            websiteLink="https://concise-works.github.io/Website-View/"
+            linkName="Website"
             manager="Self-Initiated"
             location="GitHub & YouTube"
             date="Jan 2024 - Ongoing"
